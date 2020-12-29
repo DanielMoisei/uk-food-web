@@ -1,0 +1,39 @@
+#banner-container {
+	width: 1220px;
+  border-radius: 15px;
+  background-color: #ffffff;
+}
+
+#banner-content {
+	width: 430px;
+	margin: 30px 0 30px 60px;
+	display: flex;
+	flex-flow: row wrap;
+}
+
+#banner-logo {
+	width: 222px;
+	height: 45px;
+	margin-bottom: 12.5px;
+}
+
+.banner-text {
+	font-size: 25px;
+	color: #000;
+	margin: 12.5px 0;
+}
+
+#learn-more-banner-button {
+	margin-top: 12.5px;
+	margin-right: auto;
+	padding: 13px 32px 13px 32px;
+	font-size: 18px;
+	font-weight: 700;
+	color: #fff;
+	background-color: #192932;
+	border-radius: 10px;
+}
+
+#banner-image {
+	margin-left: auto;
+}

@@ -1,0 +1,13 @@
+.ad-banner {
+	width: 1220px;
+	height: 280px;
+	background-color: #fff;
+	border-radius: 15px;
+}
+
+.ad-banner img {
+	width: 930px;
+	height: 240px;
+	padding: 20px 0;
+	margin: 0 auto;
+}

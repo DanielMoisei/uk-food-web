@@ -1,0 +1,22 @@
+#sidebar {
+	background-color: #192932;
+	width: 55px;
+	height: 100vh;
+}
+
+#sidebar-logo {
+	width: 38px;
+	height: 38px;
+	margin: 8.5px auto;
+	display: flex;
+}
+
+#sidebar-search-square {
+	margin-top: 11.5px;
+	height: 55px;
+}
+
+#sidebar-search {
+	width: 55px;
+	height: 55px;
+}

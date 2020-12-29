@@ -1,0 +1,14 @@
+#header {
+	background-color: #fff;
+	height: 55px;
+  position: sticky;
+	top: 0;
+	z-index: 2;
+}
+
+#menu-toggle {
+	width: 20px;
+	height: 15px;
+	margin: 20px 0 20px 20px;
+
+}

@@ -1,12 +1,17 @@
 import React from "react"
-import Header from "./Components/Header.js"
-import Sidebar from "./Components/Sidebar.js"
+import Header from "./Components/Header"
+import Sidebar from "./Components/Sidebar"
+import Homepage from "./Components/Homepage"
+
 
 function App() {
   return (
-    <div>
+    <div id="body">
       <Sidebar />
-      <Header />
+      <div id="content">
+        <Header />
+        <Homepage />
+      </div>
     </div>
   );
 }
