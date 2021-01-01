@@ -30,6 +30,7 @@
 	margin: 10px auto 15px;
 	padding: 0 20px;
 	color: rgba(0, 0, 0, 0.4);
+	/* DOES NOT WORK IN FIREFOX AND INTERNET EXPLORER */
   overflow: hidden;
   display: -webkit-box;
   -webkit-line-clamp: 3;

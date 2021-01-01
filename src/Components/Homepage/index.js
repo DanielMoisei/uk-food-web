@@ -2,14 +2,14 @@ import React from "react"
 import "./style.css"
 import Banner from "./Banner"
 import NewsCards from "./NewsCards"
-import AdBanner from "./AdBanner"
+import NewsBanner from "./NewsBanner"
 
 function Homepage() {
   return (
     <div>
       <Banner />
       <NewsCards />
-      <AdBanner />
+      <NewsBanner />
     </div>
   )
 }
