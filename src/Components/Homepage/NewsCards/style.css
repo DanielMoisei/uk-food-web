@@ -1,3 +1,8 @@
+#news-cards-container {
+	justify-content: space-between;
+	width: 1220px;
+}
+
 .news-card {
 	width: 290px;
 	height: 290px;

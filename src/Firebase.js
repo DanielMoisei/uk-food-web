@@ -13,7 +13,32 @@ const firebaseConfig = {
   measurementId: "G-YXRD82QG33",
 };
 
-export default firebase.initializeApp(firebaseConfig);
+firebase.initializeApp(firebaseConfig);
 
-// var db = firebase.database()
-// var dbRef = db.ref("Producers");
+export default class Firebase {
+  static db = firebase.database()
+
+  static getData(path) {
+    Firebase.db.ref(path).once("value", snap => snap.val())
+  }
+
+  static updateState(path, setState) {
+    Firebase.db.ref(path).once("value", snap => setState(snap.val()))
+  }
+
+  static getProductsFromProducer(producerId) {
+    Firebase.db.ref("Producers and Products/" + producerId).on("value", snapshot => {
+      var productIDsForSelectedProducer = snapshot.val();
+      productIDsForSelectedProducer.products.map(id => Firebase.db.ref("Products/" + id).on("value", snap => snap.val() ))
+    })
+  }
+
+  static updateStateWithProducts(producerId, setState, state) {
+      Firebase.db.ref("Producers and Products/" + producerId).once("value", snapshot => {
+        var productIDsForSelectedProducer = snapshot.val();
+        productIDsForSelectedProducer.products.forEach(id => Firebase.db.ref("Products/" + id).once("value", snap => {
+          setState(state => state.concat(snap.val() ));
+        }))
+      })
+  }
+}

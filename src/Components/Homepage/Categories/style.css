@@ -1,0 +1,49 @@
+.categories-section-container {
+	flex-flow: column;
+	width: 1220px;
+}
+
+#categories-section-title {
+	font-size: 22px;
+	font-weight: 700;
+	color: #000;
+	align-self: flex-start;
+	margin: 0 0 15px 5px;
+}
+
+#categories-container {
+	width: 1220px;
+	height: 394px;
+	display: flex;
+	align-content: space-between;
+	justify-content: space-between;
+	flex-flow: row wrap;
+}
+
+.category-card {
+	width: 290px;
+	height: 187px;
+	border-radius: 15px;
+	background-color: #fff;
+	display: flex;
+	flex-flow: row wrap;
+	transition: 0.5s all;
+}
+
+.category-card:hover {
+	transform: scale(1.1);
+	cursor: pointer;
+}
+
+.category-card img {
+	width: 290px;
+	height: 144px;
+	border-radius: 15px 15px 0 0;
+}
+
+.category-card h2 {
+	font-size: 16px;
+	font-weight: 700;
+	margin: 0 auto;
+	color: #000;
+}

@@ -1,0 +1,34 @@
+.products-section-container {
+	width: 1220px;
+	flex-flow: column;
+}
+
+#products-section-title {
+	font-size: 22px;
+	font-weight: 700;
+	color: #000;
+	align-self: flex-start;
+	margin: 0 0 15px 5px;
+}
+
+.products-container {
+	display: flex;
+	justify-content: space-between;
+	flex-flow: row;
+	width: 1220px;
+  height: 266px;
+	background-color: #fff;
+	border-radius: 15px;
+}
+
+.product-div-style {
+  width: 180px;
+  height: 180px;
+  margin: auto;
+  cursor: pointer;
+}
+
+.product-div-style img {
+  width: 180px;
+  height: 180px;
+}

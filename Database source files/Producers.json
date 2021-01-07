@@ -1,0 +1,31 @@
+[ null, {
+  "description" : "Other companies will try to sell you on their products with snazzy slogans and famous actors. Not us. Our product speaks for itself. We guarantee you won't regret trying out anything from our range of spirits and hard drinks.",
+  "id" : 3,
+  "isFavourite" : false,
+  "logoLarge" : "https://res.cloudinary.com/dbtu3hb0f/image/upload/v1609774350/ProducerImages/conkerSpirits_rsuexe.jpg",
+  "name" : "Conker Spirits"
+}, {
+  "description" : "Have you ever wanted to try out the flavours of India? Now's your chance to get your hands on authentic spices and chilli sourced directly from our sister company back home in New Delhi. We've got the widest range of chilli in the entire United Kingdom, so head to one of our 78 stores and let yourself be amazed.",
+  "id" : 2,
+  "isFavourite" : false,
+  "logoLarge" : "https://res.cloudinary.com/dbtu3hb0f/image/upload/v1609774350/ProducerImages/chilliFire_l9l0xy.jpg",
+  "name" : "Chilli Fire"
+}, {
+  "description" : "Statesman. Simply the best whisky money can buy. Visit our website for a full tour and history of our company and products.",
+  "id" : 4,
+  "isFavourite" : true,
+  "logoLarge" : "https://res.cloudinary.com/dbtu3hb0f/image/upload/v1609774351/ProducerImages/statesmanWhisky_vlnqou.jpg",
+  "name" : "Statesman Whisky"
+}, {
+  "description" : "We make the best cakes west of Hamptonfordshire. Our shop only uses locally sourced ingredients, supporting the small business owners of our country. Each time you buy from us, a small percentage of your purchase goes to one of our supported causes (for more information on that, please visit our website).",
+  "id" : 1,
+  "isFavourite" : true,
+  "logoLarge" : "https://res.cloudinary.com/dbtu3hb0f/image/upload/v1609774350/ProducerImages/cakeFactory_h39ksd.jpg",
+  "name" : "Cake Factory"
+}, {
+  "description" : "For your everyday bread and dough needs.",
+  "id" : 5,
+  "isFavourite" : false,
+  "logoLarge" : "https://res.cloudinary.com/dbtu3hb0f/image/upload/v1609774351/ProducerImages/bread_hn3e2m.jpg",
+  "name" : "Tom's Bakery"
+} ]
