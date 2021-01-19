@@ -1,20 +1,19 @@
-import React, {useState, useEffect} from "react"
+import React, {useContext} from "react"
 import Firebase from "../../../Firebase.js"
+import {DataContext} from "../../../dataContext.js"
 import "./style.css"
 
 function Categories(props) {
 
-  useEffect(() => {
-    Firebase.updateState("Categories", props.setCategories)
-  }, [])
+  const {categories} = useContext(DataContext)
 
   return (
     <div className="categories-section-container content">
       <h1 id="categories-section-title">Categories</h1>
       <div id="categories-container">
-        {props.categories.map(category => {
+        {categories.map(category => {
           return (
-          <div className="category-card">
+          <div key={category.id} className="category-card">
             <img src={category.image} alt="category" />
             <h2>{category.name}</h2>
           </div>

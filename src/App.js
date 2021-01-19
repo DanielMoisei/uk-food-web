@@ -8,16 +8,6 @@ import ProducerPage from "./Components/ProducerPage"
 
 function App() {
 
-  const [allProducts, setAllProducts] = useState([])
-  const [allProducers, setAllProducers] = useState([])
-  const [categories, setCategories] = useState([])
-
-  const [relProducts, setRelProducts] = useState([])
-  const [productCategories, setProductCategories] = useState([])
-  const [producerCategories, setProducerCategories] = useState([])
-
-  const [focusProducer, setFocusProducer] = useState()
-
   return (
     <div id="body">
       <Sidebar />
@@ -32,27 +22,11 @@ function App() {
           <Switch>
 
             <Route path="/producer">
-              <ProducerPage
-                allProducts={allProducts} setAllProducts={setAllProducts}
-                allProducers={allProducers} setAllProducers={setAllProducers}
-                categories={categories} setCategories={setCategories}
-                relProducts={relProducts} setRelProducts={setRelProducts}
-                productCategories={productCategories} setProductCategories={setProductCategories}
-                producerCategories={producerCategories} setProducerCategories={setProducerCategories}
-                focusProducer={focusProducer} setFocusProducer={setFocusProducer}
-              />
+              <ProducerPage />
             </Route>
 
             <Route path="/">
-              <Homepage
-                allProducts={allProducts} setAllProducts={setAllProducts}
-                allProducers={allProducers} setAllProducers={setAllProducers}
-                categories={categories} setCategories={setCategories}
-                relProducts={relProducts} setRelProducts={setRelProducts}
-                productCategories={productCategories} setProductCategories={setProductCategories}
-                producerCategories={producerCategories} setProducerCategories={setProducerCategories}
-                focusProducer={focusProducer} setFocusProducer={setFocusProducer}
-              />
+              <Homepage />
             </Route>
 
           </Switch>

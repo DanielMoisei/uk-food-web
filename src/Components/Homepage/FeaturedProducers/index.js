@@ -1,18 +1,16 @@
-import React, {useState, useEffect} from "react"
+import React, {useContext} from "react"
 import Firebase from "../../../Firebase.js"
+import {DataContext} from "../../../dataContext.js"
+
 import Carousel from '@brainhubeu/react-carousel';
 import '@brainhubeu/react-carousel/lib/style.css';
 import "./style.css"
 import leftArrow from "./Resources/leftArrow.svg"
 import rightArrow from "./Resources/rightArrow.svg"
-import ProducerPage from "../../ProducerPage"
-import {  BrowserRouter as Router,  Switch, Route,  Link  } from "react-router-dom";
 
 function FeaturedProducers(props) {
 
-  useEffect(() => {
-    Firebase.updateState("Producers", props.setAllProducers);
-  }, []);
+  const {allProducers, setFocusProducer, setRelProducts} = useContext(DataContext)
 
   return (
     <div className="producers-section-container content">
@@ -29,20 +27,23 @@ function FeaturedProducers(props) {
         className="producers-container"
       >
 
-          {props.allProducers.map(producer => {
-            if (producer.id <= 5) {
+          {allProducers.map(producer => {
             return (
               <div
                 key={producer.id}
-                onClick={() => Firebase.updateStateWithProducts(producer.id, props.setRelProducts, props.relProducts)}
-                onClick={() => props.setFocusProducer(producer)}
+                onClick={
+                  () => {
+                    Firebase.updateStateWithProducts(producer.id, setRelProducts);
+                    setFocusProducer(producer);
+                  }
+                }
                 className="producer-div-style"
               >
                 <img src={producer.logoLarge} alt="" />
                 <h2>{producer.name}</h2>
               </div>
             )}
-          })}
+          )}
 
       </Carousel>
 

@@ -1,5 +1,7 @@
-import React, {useState, useEffect} from "react"
+import React, {useContext} from "react"
 import Firebase from "../../../Firebase.js"
+import {DataContext} from "../../../dataContext.js"
+
 import Carousel from '@brainhubeu/react-carousel';
 import '@brainhubeu/react-carousel/lib/style.css';
 import "./style.css"
@@ -8,9 +10,7 @@ import rightArrow from "./Resources/rightArrow.svg"
 
 function FeaturedProducts(props) {
 
-  useEffect(() => {
-    Firebase.updateState("Products", props.setAllProducts);
-  }, []);
+  const {allProducts} = useContext(DataContext)
 
   return (
     <div className="products-section-container content">
@@ -26,7 +26,7 @@ function FeaturedProducts(props) {
         addArrowClickHandler
         className="products-container"
       >
-          {props.allProducts.map(product => {
+          {allProducts.map(product => {
             return (
               <div
                 key={product.id}

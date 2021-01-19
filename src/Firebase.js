@@ -33,12 +33,15 @@ export default class Firebase {
     })
   }
 
-  static updateStateWithProducts(producerId, setState, state) {
+  static updateStateWithProducts(producerId, setState) {
+
       Firebase.db.ref("Producers and Products/" + producerId).once("value", snapshot => {
         var productIDsForSelectedProducer = snapshot.val();
-        productIDsForSelectedProducer.products.forEach(id => Firebase.db.ref("Products/" + id).once("value", snap => {
-          setState(state => state.concat(snap.val() ));
-        }))
+        
+        productIDsForSelectedProducer.products.map(id => (Firebase.db.ref("Products/" + id).once("value", snap => {
+          setState(state => state.concat( snap.val() ));
+        })))
       })
   }
+
 }
