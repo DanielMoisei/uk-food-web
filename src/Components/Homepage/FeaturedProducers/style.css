@@ -46,3 +46,7 @@
 	margin: auto 20px;
 	cursor: pointer;
 }
+
+a {
+	text-decoration: none;
+}

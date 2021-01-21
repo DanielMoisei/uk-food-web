@@ -2,10 +2,11 @@ import React, {useEffect, useContext} from "react"
 import NameCard from "./NameCard"
 import Product from "./Product"
 import {DataContext} from "../../dataContext.js"
+import "./style.css"
 
 function ProducerPage(props) {
 
-  const {setRelProducts, setFocusProducer, focusProducer} = useContext(DataContext)
+  const {relProducts, setRelProducts, setFocusProducer} = useContext(DataContext)
 
   useEffect(() => {
     return () => {
@@ -15,8 +16,9 @@ function ProducerPage(props) {
   }, [])
 
   return (
-    <div>
-      <NameCard producer={focusProducer} />
+    <div id="producer-page">
+      <NameCard />
+      {relProducts.map(product => <Product productName={product.name} price={product.price} />)}
     </div>
   )
 }

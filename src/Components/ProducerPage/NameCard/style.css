@@ -1,0 +1,48 @@
+#main-card {
+  width: 1220px;
+
+  display: flex;
+  flex-flow: row;
+  background-color: #fff;
+  border-radius: 15px;
+  margin: 30px auto 15px;
+}
+
+#main-logo {
+  width: 260px;
+  height: 260px;
+  margin: 50px;
+}
+
+#main-card-content {
+  width: 860px;
+  display: flex;
+  flex-flow: row;
+  margin: 50px 0;
+}
+
+#main-card-text {
+  display: flex;
+  flex-flow: column;
+}
+
+#main-card-text h1 {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+#main-card-text p {
+  width: 700px;
+  font-size: 16px;
+  margin: 10px 0 0;
+}
+
+.fav-star {
+  width: 60px;
+  height: 57px;
+  margin: 0 50px 0 auto;
+}
+
+.fav-star:hover {
+  cursor: pointer;
+}

@@ -37,7 +37,7 @@ export default class Firebase {
 
       Firebase.db.ref("Producers and Products/" + producerId).once("value", snapshot => {
         var productIDsForSelectedProducer = snapshot.val();
-        
+
         productIDsForSelectedProducer.products.map(id => (Firebase.db.ref("Products/" + id).once("value", snap => {
           setState(state => state.concat( snap.val() ));
         })))

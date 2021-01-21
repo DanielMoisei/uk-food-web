@@ -1,9 +1,10 @@
 import React, {useContext} from "react"
 import Firebase from "../../../Firebase.js"
 import {DataContext} from "../../../dataContext.js"
+import {Link} from "react-router-dom"
 
-import Carousel from '@brainhubeu/react-carousel';
-import '@brainhubeu/react-carousel/lib/style.css';
+import Carousel from '@brainhubeu/react-carousel'
+import '@brainhubeu/react-carousel/lib/style.css'
 import "./style.css"
 import leftArrow from "./Resources/leftArrow.svg"
 import rightArrow from "./Resources/rightArrow.svg"
@@ -29,19 +30,20 @@ function FeaturedProducers(props) {
 
           {allProducers.map(producer => {
             return (
-              <div
-                key={producer.id}
-                onClick={
-                  () => {
-                    Firebase.updateStateWithProducts(producer.id, setRelProducts);
-                    setFocusProducer(producer);
+              <Link key={producer.id} to="/producer">
+                <div
+                  onClick={
+                    () => {
+                      Firebase.updateStateWithProducts(producer.id, setRelProducts);
+                      setFocusProducer(producer);
+                    }
                   }
-                }
-                className="producer-div-style"
-              >
-                <img src={producer.logoLarge} alt="" />
-                <h2>{producer.name}</h2>
-              </div>
+                  className="producer-div-style"
+                >
+                  <img src={producer.logoLarge} alt="" />
+                  <h2>{producer.name}</h2>
+                </div>
+              </Link>
             )}
           )}
 

@@ -1,0 +1,9 @@
+.content {
+	margin: 30px auto;
+	display: flex;
+}
+
+#producer-page {
+	display: flex;
+	flex-flow: column;
+}
