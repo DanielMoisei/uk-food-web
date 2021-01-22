@@ -1,31 +1,51 @@
-[ null, {
+[ {
   "description" : "Other companies will try to sell you on their products with snazzy slogans and famous actors. Not us. Our product speaks for itself. We guarantee you won't regret trying out anything from our range of spirits and hard drinks.",
-  "id" : 3,
+  "id" : 0,
   "isFavourite" : false,
   "logoLarge" : "https://res.cloudinary.com/dbtu3hb0f/image/upload/v1609774350/ProducerImages/conkerSpirits_rsuexe.jpg",
-  "name" : "Conker Spirits"
+  "logoSmall" : "https://res.cloudinary.com/dbtu3hb0f/image/upload/v1609774350/ProducerImages/conkerSpiritsLogo_jp0hrc.jpg",
+  "name" : "Conker Spirits",
+  "values" : ["https://res.cloudinary.com/dbtu3hb0f/image/upload/v1611310330/Value%20Icons/valueIcon1_jxzytn.png"],
+  "images" : ["https://res.cloudinary.com/dbtu3hb0f/image/upload/v1611310773/ProducerImages/Conker/conker1_cvezch.jpg", "https://res.cloudinary.com/dbtu3hb0f/image/upload/v1611310772/ProducerImages/Conker/conker2_loddan.jpg", "https://res.cloudinary.com/dbtu3hb0f/image/upload/v1611310773/ProducerImages/Conker/conker3_e3rkm0.jpg", "https://res.cloudinary.com/dbtu3hb0f/image/upload/v1611310772/ProducerImages/Conker/conker4_sc7qrs.jpg"],
+  "vcategories" : ["https://res.cloudinary.com/dbtu3hb0f/image/upload/v1611321121/Producer%20Category%20Icons/categoryIcon3_vrey21.png", "https://res.cloudinary.com/dbtu3hb0f/image/upload/v1611321121/Producer%20Category%20Icons/categoryIcon2_kishe1.png", "https://res.cloudinary.com/dbtu3hb0f/image/upload/v1611321121/Producer%20Category%20Icons/categoryIcon1_zxe5jy.png"]
 }, {
   "description" : "Have you ever wanted to try out the flavours of India? Now's your chance to get your hands on authentic spices and chilli sourced directly from our sister company back home in New Delhi. We've got the widest range of chilli in the entire United Kingdom, so head to one of our 78 stores and let yourself be amazed.",
-  "id" : 2,
+  "id" : 1,
   "isFavourite" : false,
   "logoLarge" : "https://res.cloudinary.com/dbtu3hb0f/image/upload/v1609774350/ProducerImages/chilliFire_l9l0xy.jpg",
-  "name" : "Chilli Fire"
+  "logoSmall" : "https://res.cloudinary.com/dbtu3hb0f/image/upload/v1609774350/ProducerImages/chilliFireLogo_wkdvsa.jpg",
+  "name" : "Chilli Fire",
+  "values" : ["https://res.cloudinary.com/dbtu3hb0f/image/upload/v1611310330/Value%20Icons/valueIcon1_jxzytn.png", "https://res.cloudinary.com/dbtu3hb0f/image/upload/v1611310330/Value%20Icons/valueIcon2_uxktb8.png"],
+  "images" : ["https://res.cloudinary.com/dbtu3hb0f/image/upload/v1611311487/ProducerImages/ChilliF/chilliF1_avrytu.jpg", "https://res.cloudinary.com/dbtu3hb0f/image/upload/v1611311488/ProducerImages/ChilliF/chilliF2_zqqnyw.jpg", "https://res.cloudinary.com/dbtu3hb0f/image/upload/v1611311487/ProducerImages/ChilliF/chilliF3_gzzkai.jpg", "https://res.cloudinary.com/dbtu3hb0f/image/upload/v1611311487/ProducerImages/ChilliF/chilliF4_xj71uq.jpg"],
+  "vcategories" : ["https://res.cloudinary.com/dbtu3hb0f/image/upload/v1611321121/Producer%20Category%20Icons/categoryIcon3_vrey21.png", "https://res.cloudinary.com/dbtu3hb0f/image/upload/v1611321121/Producer%20Category%20Icons/categoryIcon2_kishe1.png"]
 }, {
   "description" : "Statesman. Simply the best whisky money can buy. Visit our website for a full tour and history of our company and products.",
-  "id" : 4,
+  "id" : 2,
   "isFavourite" : true,
   "logoLarge" : "https://res.cloudinary.com/dbtu3hb0f/image/upload/v1609774351/ProducerImages/statesmanWhisky_vlnqou.jpg",
-  "name" : "Statesman Whisky"
+  "logoSmall" : "https://res.cloudinary.com/dbtu3hb0f/image/upload/v1609774350/ProducerImages/statesmanWhiskyLogo_e906nx.png",
+  "name" : "Statesman Whisky",
+  "values" : ["https://res.cloudinary.com/dbtu3hb0f/image/upload/v1611310330/Value%20Icons/valueIcon1_jxzytn.png", "https://res.cloudinary.com/dbtu3hb0f/image/upload/v1611310330/Value%20Icons/valueIcon2_uxktb8.png", "https://res.cloudinary.com/dbtu3hb0f/image/upload/v1611310330/Value%20Icons/valueIcon3_pbznk6.png"],
+  "images" : ["https://res.cloudinary.com/dbtu3hb0f/image/upload/v1611311109/ProducerImages/Statesman/statesman1_irijsz.jpg", "https://res.cloudinary.com/dbtu3hb0f/image/upload/v1611311109/ProducerImages/Statesman/statesman2_nj7kk6.png", "https://res.cloudinary.com/dbtu3hb0f/image/upload/v1611311109/ProducerImages/Statesman/statesman3_cek7nd.jpg", "https://res.cloudinary.com/dbtu3hb0f/image/upload/v1611311109/ProducerImages/Statesman/statesman4_yr9tzn.jpg", "https://res.cloudinary.com/dbtu3hb0f/image/upload/v1611311109/ProducerImages/Statesman/statesman5_algnnz.jpg", "https://res.cloudinary.com/dbtu3hb0f/image/upload/v1611311109/ProducerImages/Statesman/statesman6_ltyki5.jpg", "https://res.cloudinary.com/dbtu3hb0f/image/upload/v1611311109/ProducerImages/Statesman/statesman7_qq1b9h.jpg", "https://res.cloudinary.com/dbtu3hb0f/image/upload/v1611311110/ProducerImages/Statesman/statesman8_fqhzco.jpg", "https://res.cloudinary.com/dbtu3hb0f/image/upload/v1611311110/ProducerImages/Statesman/statesman9_qdqbn3.jpg", "https://res.cloudinary.com/dbtu3hb0f/image/upload/v1611311110/ProducerImages/Statesman/statesman10_inxlva.jpg", "https://res.cloudinary.com/dbtu3hb0f/image/upload/v1611311110/ProducerImages/Statesman/statesman11_uifmg5.jpg", "https://res.cloudinary.com/dbtu3hb0f/image/upload/v1611311110/ProducerImages/Statesman/statesman12_qevwkm.jpg", "https://res.cloudinary.com/dbtu3hb0f/image/upload/v1611311110/ProducerImages/Statesman/statesman13_ao1te4.jpg", "https://res.cloudinary.com/dbtu3hb0f/image/upload/v1611311110/ProducerImages/Statesman/statesman14_bgxkpp.jpg", "https://res.cloudinary.com/dbtu3hb0f/image/upload/v1611311110/ProducerImages/Statesman/statesman15_tftgw9.jpg", "https://res.cloudinary.com/dbtu3hb0f/image/upload/v1611311110/ProducerImages/Statesman/statesman16_ftiiwm.jpg", "https://res.cloudinary.com/dbtu3hb0f/image/upload/v1611311108/ProducerImages/Statesman/statesman17_wskivm.jpg"],
+  "vcategories" : ["https://res.cloudinary.com/dbtu3hb0f/image/upload/v1611321121/Producer%20Category%20Icons/categoryIcon3_vrey21.png", "https://res.cloudinary.com/dbtu3hb0f/image/upload/v1611321121/Producer%20Category%20Icons/categoryIcon2_kishe1.png", "https://res.cloudinary.com/dbtu3hb0f/image/upload/v1611321121/Producer%20Category%20Icons/categoryIcon1_zxe5jy.png"]
 }, {
   "description" : "We make the best cakes west of Hamptonfordshire. Our shop only uses locally sourced ingredients, supporting the small business owners of our country. Each time you buy from us, a small percentage of your purchase goes to one of our supported causes (for more information on that, please visit our website).",
-  "id" : 1,
+  "id" : 3,
   "isFavourite" : true,
   "logoLarge" : "https://res.cloudinary.com/dbtu3hb0f/image/upload/v1609774350/ProducerImages/cakeFactory_h39ksd.jpg",
-  "name" : "Cake Factory"
+  "logoSmall" : "https://res.cloudinary.com/dbtu3hb0f/image/upload/v1609774350/ProducerImages/cakeFactoryLogo_ztwyhr.jpg",
+  "name" : "Cake Factory",
+  "values" : ["https://res.cloudinary.com/dbtu3hb0f/image/upload/v1611310330/Value%20Icons/valueIcon1_jxzytn.png", "https://res.cloudinary.com/dbtu3hb0f/image/upload/v1611310330/Value%20Icons/valueIcon2_uxktb8.png", "https://res.cloudinary.com/dbtu3hb0f/image/upload/v1611310330/Value%20Icons/valueIcon3_pbznk6.png", "https://res.cloudinary.com/dbtu3hb0f/image/upload/v1611310330/Value%20Icons/valueIcon4_jop4py.png"],
+  "images" : ["https://res.cloudinary.com/dbtu3hb0f/image/upload/v1611311497/ProducerImages/CFactory/cFactory1_kyns8s.jpg", "https://res.cloudinary.com/dbtu3hb0f/image/upload/v1611311496/ProducerImages/CFactory/cFactory2_ejk2nr.gif", "https://res.cloudinary.com/dbtu3hb0f/image/upload/v1611311496/ProducerImages/CFactory/cFactory3_btnbkh.jpg", "https://res.cloudinary.com/dbtu3hb0f/image/upload/v1611311496/ProducerImages/CFactory/cFactory4_sk64xb.jpg"],
+  "vcategories" : ["https://res.cloudinary.com/dbtu3hb0f/image/upload/v1611321121/Producer%20Category%20Icons/categoryIcon3_vrey21.png", "https://res.cloudinary.com/dbtu3hb0f/image/upload/v1611321121/Producer%20Category%20Icons/categoryIcon2_kishe1.png", "https://res.cloudinary.com/dbtu3hb0f/image/upload/v1611321121/Producer%20Category%20Icons/categoryIcon4_u9s6dx.png"]
 }, {
   "description" : "For your everyday bread and dough needs.",
-  "id" : 5,
+  "id" : 4,
   "isFavourite" : false,
   "logoLarge" : "https://res.cloudinary.com/dbtu3hb0f/image/upload/v1609774351/ProducerImages/bread_hn3e2m.jpg",
-  "name" : "Tom's Bakery"
+  "logoSmall" : "https://res.cloudinary.com/dbtu3hb0f/image/upload/v1609774351/ProducerImages/breadLogo_l1f2wt.jpg",
+  "name" : "Tom's Bakery",
+  "values" : ["https://res.cloudinary.com/dbtu3hb0f/image/upload/v1611310330/Value%20Icons/valueIcon1_jxzytn.png", "https://res.cloudinary.com/dbtu3hb0f/image/upload/v1611310330/Value%20Icons/valueIcon2_uxktb8.png", "https://res.cloudinary.com/dbtu3hb0f/image/upload/v1611310330/Value%20Icons/valueIcon3_pbznk6.png", "https://res.cloudinary.com/dbtu3hb0f/image/upload/v1611310330/Value%20Icons/valueIcon4_jop4py.png", "https://res.cloudinary.com/dbtu3hb0f/image/upload/v1611310330/Value%20Icons/valueIcon5_zytuio.png"],
+  "images" : ["https://res.cloudinary.com/dbtu3hb0f/image/upload/v1611311480/ProducerImages/TBakery/tBakery1_vimlxp.jpg", "https://res.cloudinary.com/dbtu3hb0f/image/upload/v1611311479/ProducerImages/TBakery/tBakery2_arkmgl.jpg", "https://res.cloudinary.com/dbtu3hb0f/image/upload/v1611311480/ProducerImages/TBakery/tBakery3_xxx0zp.jpg", "https://res.cloudinary.com/dbtu3hb0f/image/upload/v1611311479/ProducerImages/TBakery/tBakery4_pscjba.jpg"],
+  "vcategories" : ["https://res.cloudinary.com/dbtu3hb0f/image/upload/v1611321121/Producer%20Category%20Icons/categoryIcon2_kishe1.png", "https://res.cloudinary.com/dbtu3hb0f/image/upload/v1611321121/Producer%20Category%20Icons/categoryIcon4_u9s6dx.png"]
 } ]

@@ -1,0 +1,33 @@
+#product {
+  width: 190px;
+  display: flex;
+  flex-flow: column;
+  margin: 0 34px 0 0;
+}
+
+#product-header {
+  width: 190px;
+  height: 190px;
+  display: flex;
+}
+
+#product-price {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 35px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #000;
+  background-color: #A0E000;
+  margin: 12px 12px 0 auto;
+  border-radius: 7px;
+}
+
+#product-name {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+  margin: 10px 0 40px;
+}

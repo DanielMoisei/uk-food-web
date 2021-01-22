@@ -1,0 +1,94 @@
+#media-card {
+  width: 1220px;
+  display: flex;
+  flex-flow: row;
+  background-color: #fff;
+  border-radius: 15px;
+  margin: 15px auto;
+}
+
+#focus-image {
+  width: 260px;
+  height: 260px;
+  margin: 50px;
+}
+
+#media-card-content {
+  width: 800px;
+  display: flex;
+  flex-flow: column;
+}
+
+#values-categories {
+  display: flex;
+  flex-flow: row;
+}
+
+.producer-values {
+  width: 350px;
+  display: flex;
+  flex-flow: column;
+  margin: 50px auto;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+#prod-cat {
+  margin: 50px 50px 50px 100px;
+}
+
+#values {
+  display: flex;
+  flex-flow: row wrap;
+  margin: 15px 0 0;
+}
+
+#values img {
+  width: 35px;
+  height: 35px;
+  margin: 0 15px 0 0;
+}
+
+#vcat {
+  display: flex;
+  flex-flow: row wrap;
+  margin: 15px 0 0;
+}
+
+#vcat img {
+  width: 35px;
+  height: 35px;
+  margin: 0 15px 0 0;
+}
+
+.car {
+  height: 150px;
+  width: 800px;
+}
+
+.car-image {
+  width: 80px;
+  height: 80px;
+}
+
+.car-image:hover {
+  cursor: pointer;
+}
+
+#arrow-left {
+	width: 12px;
+	height: 23px;
+	cursor: pointer;
+  margin: auto 20px auto 0;
+}
+
+#arrow-right {
+	width: 12px;
+	height: 23px;
+	cursor: pointer;
+  margin: auto 0 auto 20px;
+}
+
+#line {
+  width: inherit;
+}

@@ -11,7 +11,7 @@ import rightArrow from "./Resources/rightArrow.svg"
 
 function FeaturedProducers(props) {
 
-  const {allProducers, setFocusProducer, setRelProducts} = useContext(DataContext)
+  const {allProducers, setRelProducts} = useContext(DataContext)
 
   return (
     <div className="producers-section-container content">
@@ -30,17 +30,9 @@ function FeaturedProducers(props) {
 
           {allProducers.map(producer => {
             return (
-              <Link key={producer.id} to="/producer">
-                <div
-                  onClick={
-                    () => {
-                      Firebase.updateStateWithProducts(producer.id, setRelProducts);
-                      setFocusProducer(producer);
-                    }
-                  }
-                  className="producer-div-style"
-                >
-                  <img src={producer.logoLarge} alt="" />
+              <Link key={producer.id} to={"/producer/" + producer.name}>
+                <div className="producer-div-style">
+                  <img src={producer.logoLarge} alt="producerLogo" />
                   <h2>{producer.name}</h2>
                 </div>
               </Link>

@@ -4,6 +4,7 @@ import Firebase from "./Firebase.js"
 const DataContext = React.createContext()
 
 function DataContextProvider(props) {
+
   const [allProducts, setAllProducts] = useState([])
   const [allProducers, setAllProducers] = useState([])
   const [categories, setCategories] = useState([])
@@ -11,8 +12,6 @@ function DataContextProvider(props) {
   const [relProducts, setRelProducts] = useState([])
   const [productCategories, setProductCategories] = useState([])
   const [producerCategories, setProducerCategories] = useState([])
-
-  const [focusProducer, setFocusProducer] = useState()
 
   useEffect(() => {
     Firebase.updateState("Categories", setCategories);
@@ -28,8 +27,7 @@ function DataContextProvider(props) {
         categories, setCategories,
         relProducts, setRelProducts,
         productCategories, setProductCategories,
-        producerCategories, setProducerCategories,
-        focusProducer, setFocusProducer}}
+        producerCategories, setProducerCategories}}
     >
       {props.children}
     </DataContext.Provider>
