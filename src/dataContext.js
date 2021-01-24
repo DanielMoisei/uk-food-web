@@ -10,6 +10,9 @@ function DataContextProvider(props) {
   const [categories, setCategories] = useState([])
 
   const [relProducts, setRelProducts] = useState([])
+  const [relProducer, setRelProducer] = useState()
+
+
   const [productCategories, setProductCategories] = useState([])
   const [producerCategories, setProducerCategories] = useState([])
 
@@ -26,6 +29,7 @@ function DataContextProvider(props) {
         allProducers, setAllProducers,
         categories, setCategories,
         relProducts, setRelProducts,
+        relProducer, setRelProducer,
         productCategories, setProductCategories,
         producerCategories, setProducerCategories}}
     >

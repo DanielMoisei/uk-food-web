@@ -1,10 +1,13 @@
 import React, {useEffect, useContext} from "react"
+import {useParams} from "react-router-dom"
+
+import Firebase from "../../Firebase.js"
+import {DataContext} from "../../dataContext.js"
+
 import NameCard from "./NameCard"
 import MediaCard from "./MediaCard"
 import ProductsCard from "./ProductsCard"
-import {DataContext} from "../../dataContext.js"
-import Firebase from "../../Firebase.js"
-import {useParams} from "react-router-dom"
+
 import "./style.css"
 
 function ProducerPage(props) {

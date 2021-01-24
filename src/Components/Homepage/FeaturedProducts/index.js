@@ -1,4 +1,5 @@
 import React, {useContext} from "react"
+import {Link} from "react-router-dom"
 import Firebase from "../../../Firebase.js"
 import {DataContext} from "../../../dataContext.js"
 
@@ -28,11 +29,10 @@ function FeaturedProducts(props) {
       >
           {allProducts.map(product => {
             return (
-              <div
-                key={product.id}
-                className="product-div-style"
-              >
-                <img src={product.image} alt="" />
+              <div key={product.id} className="product-div-style">
+                <Link to={"/product/" + product.name}>
+                  <img src={product.images[0]} alt="" />
+                </Link>
               </div>
             )
           })}
