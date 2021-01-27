@@ -1,7 +1,8 @@
 import React from "react"
-import "./style.css"
+
 import menuToggle from "./Resources/menuToggle.png"
 
+import "./style.css"
 
 function Header() {
   return (

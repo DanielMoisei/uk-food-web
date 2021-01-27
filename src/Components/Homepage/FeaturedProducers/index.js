@@ -1,7 +1,7 @@
 import React, {useContext} from "react"
-import Firebase from "../../../Firebase.js"
-import {DataContext} from "../../../dataContext.js"
 import {Link} from "react-router-dom"
+
+import {DataContext} from "../../../dataContext.js"
 
 import Carousel from '@brainhubeu/react-carousel'
 import '@brainhubeu/react-carousel/lib/style.css'
@@ -11,7 +11,7 @@ import rightArrow from "./Resources/rightArrow.svg"
 
 function FeaturedProducers(props) {
 
-  const {allProducers, setRelProducts} = useContext(DataContext)
+  const {allProducers} = useContext(DataContext)
 
   return (
     <div className="producers-section-container content">

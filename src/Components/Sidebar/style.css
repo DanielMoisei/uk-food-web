@@ -13,7 +13,9 @@
 
 #sidebar-search-square {
 	margin-top: 11.5px;
+	width: 55px;
 	height: 55px;
+	z-index: 2;
 }
 
 #sidebar-search {

@@ -1,7 +1,9 @@
 import React from "react"
-import "./style.css"
+
 import bannerImage from "./Resources/bannerImage.png"
 import logoLarge from "./Resources/logoLarge.png"
+
+import "./style.css"
 
 function Banner() {
   return (

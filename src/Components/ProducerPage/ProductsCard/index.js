@@ -1,9 +1,11 @@
 import React, {useContext} from "react"
-import {Link} from "react-router-dom"
-import Product from "./Product"
+
 import {DataContext} from "../../../dataContext.js"
-import "./style.css"
+
+import Product from "./Product"
 import rightArrow from "./Resources/rightArrow.svg"
+
+import "./style.css"
 
 function ProductsCard(props) {
 
@@ -23,7 +25,7 @@ function ProductsCard(props) {
       </div>
 
       <div id="products">
-        {relProducts.map(product => <Link to={"/product/" + product.name}> <Product key={product.id} product={product} /> </Link>)}
+        {relProducts.map(product => <Product key={product.id} product={product} />)}
       </div>
     </div>
   )

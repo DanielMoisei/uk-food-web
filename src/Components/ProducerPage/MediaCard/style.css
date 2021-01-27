@@ -61,17 +61,17 @@
   margin: 0 15px 0 0;
 }
 
-.car {
+.producer-car {
   height: 150px;
   width: 800px;
 }
 
-.car-image {
+.producer-car-image {
   width: 80px;
   height: 80px;
 }
 
-.car-image:hover {
+.producer-car-image:hover {
   cursor: pointer;
 }
 

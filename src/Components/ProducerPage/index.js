@@ -28,7 +28,7 @@ function ProducerPage(props) {
     <div id="producer-page">
       <NameCard thisProducer={thisProducer} />
       <MediaCard thisProducer={thisProducer} />
-      {relProducts.length && <ProductsCard thisProducer={thisProducer} />}
+      {relProducts.length ? <ProductsCard thisProducer={thisProducer} /> : null}
     </div>
   )
 }

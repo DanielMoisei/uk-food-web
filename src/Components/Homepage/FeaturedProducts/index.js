@@ -1,6 +1,6 @@
 import React, {useContext} from "react"
 import {Link} from "react-router-dom"
-import Firebase from "../../../Firebase.js"
+
 import {DataContext} from "../../../dataContext.js"
 
 import Carousel from '@brainhubeu/react-carousel';

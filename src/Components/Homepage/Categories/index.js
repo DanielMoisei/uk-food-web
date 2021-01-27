@@ -1,6 +1,7 @@
 import React, {useContext} from "react"
-import Firebase from "../../../Firebase.js"
+
 import {DataContext} from "../../../dataContext.js"
+
 import "./style.css"
 
 function Categories(props) {

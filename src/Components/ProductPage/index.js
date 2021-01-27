@@ -16,15 +16,15 @@ function ProductPage(props) {
   const thisProduct = allProducts.find(product => product.name === productName)
 
   useEffect(() => {
-    Firebase.findProducerForProduct(thisProduct.id, setRelProducer);
+    Firebase.findProducerForProduct(thisProduct.id, setRelProducer)
     return () => {
-      setRelProducer();
+      setRelProducer()
     }
   }, [])
 
   return (
     <div id="product-page">
-      {relProducer && <NameCard thisProduct={thisProduct} />}
+      {relProducer ? <NameCard thisProduct={thisProduct} /> : null}
     </div>
   )
 }

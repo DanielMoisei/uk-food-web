@@ -1,10 +1,11 @@
 import React, {useState, useEffect} from "react"
-import "./style.css"
 
 import Carousel from '@brainhubeu/react-carousel'
 import '@brainhubeu/react-carousel/lib/style.css'
 import leftArrow from "./Resources/leftArrow.svg"
 import rightArrow from "./Resources/rightArrow.svg"
+
+import "./style.css"
 
 function MediaCard(props) {
 
@@ -45,10 +46,10 @@ function MediaCard(props) {
           arrowLeft={<img id="arrow-left" src={leftArrow} alt="arrow" />}
           arrowRight={<img id="arrow-right" src={rightArrow} alt="arrow" />}
           addArrowClickHandler
-          className="car"
+          className="producer-car"
         >
 
-            {producer.images.map(image => <img className="car-image" onClick={() => setFocusImage(image)} src={image} alt="" />)}
+            {producer.images.map(image => <img className="producer-car-image" onClick={() => setFocusImage(image)} src={image} alt="" />)}
 
         </Carousel>
       </div>

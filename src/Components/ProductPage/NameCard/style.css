@@ -1,0 +1,100 @@
+#main-product-card {
+  width: 1220px;
+  display: flex;
+  flex-flow: row;
+  background-color: #fff;
+  border-radius: 15px;
+  margin: 30px auto 15px;
+}
+
+#main-product-card h1 {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+#main-product-card h2 {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+#main-product-card h3 {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+#main-product-card p {
+  width: 550px;
+  font-size: 16px;
+}
+
+#main-product-card a {
+  text-decoration: none;
+  color: #A0E000;
+}
+
+#main-product-card a:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+#image-car {
+  margin: 50px;
+  display: flex;
+  flex-flow: column;
+}
+
+#car-focused-img {
+  width: 450px;
+  height: 450px;
+  margin: 0 auto;
+}
+
+.product-car {
+  height: 100px;
+  width: 500px;
+  margin: 50px auto 0;
+}
+
+.product-car-image {
+  width: 80px;
+  height: 80px;
+}
+
+.product-car-image:hover {
+  cursor: pointer;
+}
+
+#main-product-card-text {
+  display: flex;
+  flex-flow: column;
+  margin: 50px 50px 50px 0;
+}
+
+#fav-row {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  margin: 25px 0 0;
+}
+
+#fav-row img {
+  width: 60px;
+  height: 57px;
+  margin: 0 0 0 auto;
+}
+
+#price-tag {
+  background-color: #192932;
+  color: #fff;
+  width: 100px;
+  height: 40px;
+  text-align: center;
+  padding: 5px 0 0;
+  border-radius: 12px;
+  margin: 50px 0 0;
+}
+
+#info-line {
+  width: 550px;
+  margin: 50px auto;
+}

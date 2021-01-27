@@ -1,9 +1,12 @@
 import React from "react"
+
 import NewsCard from "./NewsCard"
 import bakerAtWork from "./Resources/bakerAtWork.jpg"
 import latestNews from "./Resources/latestNews.jpg"
 import nutritionTips from "./Resources/nutritionTips.jpg"
 import warehouseStaff from "./Resources/warehouseStaff.jpg"
+
+import "./style.css"
 
 function NewsCards() {
   return(

@@ -1,9 +1,14 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './style.css';
-import App from './App';
-import {DataContextProvider} from "./dataContext.js"
+import React from 'react'
+import ReactDOM from 'react-dom'
 import {BrowserRouter as Router} from "react-router-dom"
+
+import {DataContextProvider} from "./dataContext.js"
+
+import App from './App'
+
+import './style.css'
+
+
 
 
 ReactDOM.render(

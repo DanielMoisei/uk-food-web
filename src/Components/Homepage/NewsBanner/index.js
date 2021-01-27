@@ -1,6 +1,8 @@
 import React from "react"
-import "./style.css"
+
 import newsBannerWide from "./Resources/newsBannerWide.jpg"
+
+import "./style.css"
 
 function NewsBanner() {
   return (

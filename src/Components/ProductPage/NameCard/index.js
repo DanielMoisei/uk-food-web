@@ -21,24 +21,24 @@ function NameCard(props) {
     <div id="main-product-card">
 
       <div id="image-car">
-        <img src={focusImage} alt="" />
+        <img id="car-focused-img" src={focusImage} alt="" />
         <Carousel
-          slidesPerPage={5}
-          slidesPerScroll={5}
+          slidesPerPage={4}
+          slidesPerScroll={4}
           arrowLeft={<img id="arrow-left" src={leftArrow} alt="arrow" />}
           arrowRight={<img id="arrow-right" src={rightArrow} alt="arrow" />}
           addArrowClickHandler
-          className="car"
+          className="product-car"
         >
 
-            {product.images.map(image => <img key={image} className="car-image" onClick={() => setFocusImage(image)} src={image} alt="" />)}
+            {product.images.map(image => <img key={image} className="product-car-image" onClick={() => setFocusImage(image)} src={image} alt="" />)}
 
         </Carousel>
       </div>
 
-      <div id="main-card-text">
+      <div id="main-product-card-text">
 
-        <div id="main-info">
+        <div id="main-product-info">
           <h1>{product.name}</h1>
           <div id="fav-row">
             <h2>Producer: <Link to={"/producer/" + relProducer.name}>{relProducer.name}</Link></h2>
@@ -48,10 +48,12 @@ function NameCard(props) {
               alt="isFav"
             />
           </div>
-          <h3>£{product.price}</h3>
+          <h3 id="price-tag">£{product.price}</h3>
         </div>
 
-        <div id="main-description">
+        <hr id="info-line" />
+
+        <div id="main-product-description">
           <h2>Description</h2>
           <p>{product.description}</p>
         </div>

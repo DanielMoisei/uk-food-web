@@ -1,0 +1,109 @@
+#search-page {
+  display: flex;
+  flex-flow: row;
+}
+
+#filter-bar {
+  width: 300px;
+  height: 782px;
+  background-color: #fff;
+  border-radius: 15px;
+  margin: 50px;
+  display: flex;
+  flex-flow: column;
+  position: fixed;
+}
+
+#filter-bar h3 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+#filter-bar p {
+  font-size: 16px;
+}
+
+#price-filter {
+  display: flex;
+  flex-flow: column;
+  margin: 0 auto;
+}
+
+#price-title {
+  margin: 50px auto 20px;
+}
+
+#price-input {
+  width: 180px;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.price-field {
+  width: 60px;
+  height: 30px;
+  font-size: 16px;
+  text-align: center;
+  outline: none;
+  border-radius: 5px;
+  border: 1.5px solid #000;
+}
+
+.price-field:focus {
+  border: 1.5px solid #A0E000;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+#category-filter {
+  width: 270px;
+  margin: 50px 0 0 auto;
+}
+
+#producer-filter {
+  width: 270px;
+  margin: 50px 0 50px auto;
+}
+
+.filter-title {
+  display: flex;
+  flex-flow: row;
+  align-items: baseline;
+}
+
+.expand-button {
+  background: none;
+  border: none;
+  outline: none;
+  margin: 0 20px 0 auto;
+  font-size: 16px;
+}
+
+.expand-button:hover {
+  cursor: pointer;
+}
+
+.filter-choice {
+  margin: 5px auto;
+}
+
+.filter-choice:hover {
+  cursor: pointer;
+}
+
+#products-area {
+  width: 1465px;
+  display: flex;
+  flex-flow: row wrap;
+  margin: 50px 0 50px auto;
+}
+
+a {
+  text-decoration: none;
+}
