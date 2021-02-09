@@ -10,12 +10,12 @@
 #products-card-title {
   font-size: 28px;
   font-weight: 700;
-  margin: 50px 0 0 50px;
+  margin: 50px 0 0 67px;
 }
 
 #products {
   width: 1120px;
-  margin: 50px auto;
+  margin: 50px 33px 50px 67px;
   display: flex;
   flex-flow: row wrap;
 }
@@ -30,7 +30,7 @@
   display: flex;
   flex-flow: row;
   align-items: center;
-  margin: 50px 50px 0 auto;
+  margin: 50px 67px 0 auto;
 }
 
 #clear-button {

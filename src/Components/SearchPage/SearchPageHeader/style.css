@@ -17,7 +17,7 @@
 #search-bar-form {
   display: flex;
   flex-flow: row;
-  margin: auto 50px;
+  margin: auto 50px auto 40px;
 }
 
 #search-bar {
@@ -37,21 +37,17 @@
   color: transparent;
 }
 
-#search-submit {
-  background: none;
+#search-bar-icon {
+	height: 28px;
   border-radius: 0 9999px 9999px 0;
   border: 1px solid #000;
   border-left: none;
   padding: 2px 20px 0;
-  outline: none;
+	display: flex;
 }
 
-#search-submit:hover {
-  cursor: pointer;
-}
-
-#search-bar-icon {
+#search-icon {
   width: 16px;
   height: 16px;
-  margin: auto 0;
+  margin: 5px 0;
 }

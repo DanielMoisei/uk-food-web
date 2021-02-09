@@ -64,11 +64,13 @@ input::-webkit-inner-spin-button {
 #category-filter {
   width: 270px;
   margin: 50px 0 0 auto;
+  user-select: none;
 }
 
 #producer-filter {
   width: 270px;
   margin: 50px 0 50px auto;
+  user-select: none;
 }
 
 .filter-title {
@@ -83,14 +85,20 @@ input::-webkit-inner-spin-button {
   outline: none;
   margin: 0 20px 0 auto;
   font-size: 16px;
+  user-select: none;
 }
 
 .expand-button:hover {
   cursor: pointer;
 }
 
+.expand-button:active {
+  transform: scale(0.9);
+}
+
 .filter-choice {
   margin: 5px auto;
+  user-select: none;
 }
 
 .filter-choice:hover {
@@ -101,7 +109,7 @@ input::-webkit-inner-spin-button {
   width: 1465px;
   display: flex;
   flex-flow: row wrap;
-  margin: 50px 0 50px auto;
+  margin: 50px 0 10px auto;
 }
 
 a {

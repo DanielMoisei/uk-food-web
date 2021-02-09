@@ -1,4 +1,5 @@
 import React, {useContext} from "react"
+import {Link} from "react-router-dom"
 
 import {DataContext} from "../../../dataContext.js"
 
@@ -6,7 +7,7 @@ import "./style.css"
 
 function Categories(props) {
 
-  const {categories} = useContext(DataContext)
+  const {categories, addCategoryFilter} = useContext(DataContext)
 
   return (
     <div className="categories-section-container content">
@@ -14,10 +15,10 @@ function Categories(props) {
       <div id="categories-container">
         {categories.map(category => {
           return (
-          <div key={category.id} className="category-card">
-            <img src={category.image} alt="category" />
-            <h2>{category.name}</h2>
-          </div>
+            <Link to="/search" key={category.id} className="category-card" onClick={() => addCategoryFilter(category)}>
+              <img src={category.image} alt="category" />
+              <h2>{category.name}</h2>
+            </Link>
           )
         })}
       </div>

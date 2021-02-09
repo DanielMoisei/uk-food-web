@@ -1,33 +1,33 @@
-[ null, {
-  "id" : 1,
+[ {
+  "id" : 0,
   "image" : "https://res.cloudinary.com/dbtu3hb0f/image/upload/v1609929534/Categories/chocolate_cmzmky.jpg",
   "name" : "Chocolate"
 }, {
-  "id" : 2,
+  "id" : 1,
   "image" : "https://res.cloudinary.com/dbtu3hb0f/image/upload/v1609929534/Categories/gin_izq8q0.jpg",
   "name" : "Gin"
 }, {
-  "id" : 3,
+  "id" : 2,
   "image" : "https://res.cloudinary.com/dbtu3hb0f/image/upload/v1609929677/Categories/softDrinks_ixcus9.jpg",
   "name" : "Soft drinks"
 }, {
-  "id" : 4,
+  "id" : 3,
   "image" : "https://res.cloudinary.com/dbtu3hb0f/image/upload/v1609929534/Categories/cakes_msliba.png",
   "name" : "Cakes"
 }, {
-  "id" : 5,
+  "id" : 4,
   "image" : "https://res.cloudinary.com/dbtu3hb0f/image/upload/v1609929534/Categories/chilliSauces_dvq84y.jpg",
   "name" : "Chilli & Sauces"
 }, {
-  "id" : 6,
+  "id" : 5,
   "image" : "https://res.cloudinary.com/dbtu3hb0f/image/upload/v1609929535/Categories/whisky_q3hdc3.jpg",
   "name" : "Whisky"
 }, {
-  "id" : 7,
+  "id" : 6,
   "image" : "https://res.cloudinary.com/dbtu3hb0f/image/upload/v1609929535/Categories/freshVegetables_xnuzvr.png",
   "name" : "Fresh vegetables"
 }, {
-  "id" : 8,
+  "id" : 7,
   "image" : "https://res.cloudinary.com/dbtu3hb0f/image/upload/v1609929534/Categories/bakery_lrsvbg.jpg",
   "name" : "Bakery"
 }

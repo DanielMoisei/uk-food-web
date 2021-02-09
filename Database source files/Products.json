@@ -5,7 +5,8 @@
   "isFavourite" : true,
   "name" : "Conker Navy Gin",
   "price" : 39,
-  "producerId" : 0
+  "producerId" : 0,
+  "categoryId" : 1
 }, {
   "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer suscipit enim nec nunc ultrices vulputate. Curabitur aliquam vitae libero et ullamcorper. Curabitur dictum posuere neque, vitae porttitor metus rutrum sit.",
   "id" : 1,
@@ -13,7 +14,8 @@
   "isFavourite" : false,
   "name" : "Conker Coffee Flavoured Gin",
   "price" : 49,
-  "producerId" : 0
+  "producerId" : 0,
+  "categoryId" : 1
 }, {
   "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer suscipit enim nec nunc ultrices vulputate. Curabitur aliquam vitae libero et ullamcorper. Curabitur dictum posuere neque, vitae porttitor metus rutrum sit.",
   "id" : 2,
@@ -21,7 +23,8 @@
   "isFavourite" : false,
   "name" : "London Dry Gin",
   "price" : 40,
-  "producerId" : 0
+  "producerId" : 0,
+  "categoryId" : 1
 }, {
   "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer suscipit enim nec nunc ultrices vulputate. Curabitur aliquam vitae libero et ullamcorper. Curabitur dictum posuere neque, vitae porttitor metus rutrum sit.",
   "id" : 3,
@@ -29,7 +32,8 @@
   "isFavourite" : false,
   "name" : "Fisherman Gin",
   "price" : 39,
-  "producerId" : 0
+  "producerId" : 0,
+  "categoryId" : 1
 }, {
   "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer suscipit enim nec nunc ultrices vulputate. Curabitur aliquam vitae libero et ullamcorper. Curabitur dictum posuere neque, vitae porttitor metus rutrum sit.",
   "id" : 4,
@@ -37,7 +41,8 @@
   "isFavourite" : false,
   "name" : "Premium Herbal Gin",
   "price" : 79,
-  "producerId" : 0
+  "producerId" : 0,
+  "categoryId" : 1
 }, {
   "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer suscipit enim nec nunc ultrices vulputate. Curabitur aliquam vitae libero et ullamcorper. Curabitur dictum posuere neque, vitae porttitor metus rutrum sit.",
   "id" : 5,
@@ -45,7 +50,8 @@
   "isFavourite" : false,
   "name" : "Irish Gin",
   "price" : 29,
-  "producerId" : 0
+  "producerId" : 0,
+  "categoryId" : 1
 }, {
   "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer suscipit enim nec nunc ultrices vulputate. Curabitur aliquam vitae libero et ullamcorper. Curabitur dictum posuere neque, vitae porttitor metus rutrum sit.",
   "id" : 6,
@@ -53,7 +59,8 @@
   "isFavourite" : true,
   "name" : "Blackout Gin",
   "price" : 49,
-  "producerId" : 0
+  "producerId" : 0,
+  "categoryId" : 1
 }, {
   "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer suscipit enim nec nunc ultrices vulputate. Curabitur aliquam vitae libero et ullamcorper. Curabitur dictum posuere neque, vitae porttitor metus rutrum sit.",
   "id" : 7,
@@ -61,7 +68,8 @@
   "isFavourite" : false,
   "name" : "Chilli Sauce",
   "price" : 11,
-  "producerId" : 1
+  "producerId" : 1,
+  "categoryId" : 4
 }, {
   "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer suscipit enim nec nunc ultrices vulputate. Curabitur aliquam vitae libero et ullamcorper. Curabitur dictum posuere neque, vitae porttitor metus rutrum sit.",
   "id" : 8,
@@ -69,7 +77,8 @@
   "isFavourite" : false,
   "name" : "Sesame Chilli",
   "price" : 6,
-  "producerId" : 1
+  "producerId" : 1,
+  "categoryId" : 4
 }, {
   "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer suscipit enim nec nunc ultrices vulputate. Curabitur aliquam vitae libero et ullamcorper. Curabitur dictum posuere neque, vitae porttitor metus rutrum sit.",
   "id" : 9,
@@ -77,7 +86,8 @@
   "isFavourite" : false,
   "name" : "Kashmiri Chilli",
   "price" : 19,
-  "producerId" : 1
+  "producerId" : 1,
+  "categoryId" : 4
 }, {
   "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer suscipit enim nec nunc ultrices vulputate. Curabitur aliquam vitae libero et ullamcorper. Curabitur dictum posuere neque, vitae porttitor metus rutrum sit.",
   "id" : 10,
@@ -85,7 +95,8 @@
   "isFavourite" : false,
   "name" : "Hot Chilli Powder",
   "price" : 8,
-  "producerId" : 1
+  "producerId" : 1,
+  "categoryId" : 4
 }, {
   "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer suscipit enim nec nunc ultrices vulputate. Curabitur aliquam vitae libero et ullamcorper. Curabitur dictum posuere neque, vitae porttitor metus rutrum sit.",
   "id" : 11,
@@ -93,7 +104,8 @@
   "isFavourite" : false,
   "name" : "Chilli Flakes",
   "price" : 4,
-  "producerId" : 1
+  "producerId" : 1,
+  "categoryId" : 4
 }, {
   "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer suscipit enim nec nunc ultrices vulputate. Curabitur aliquam vitae libero et ullamcorper. Curabitur dictum posuere neque, vitae porttitor metus rutrum sit.",
   "id" : 12,
@@ -101,7 +113,8 @@
   "isFavourite" : false,
   "name" : "Green Chilli",
   "price" : 2,
-  "producerId" : 1
+  "producerId" : 1,
+  "categoryId" : 4
 }, {
   "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer suscipit enim nec nunc ultrices vulputate. Curabitur aliquam vitae libero et ullamcorper. Curabitur dictum posuere neque, vitae porttitor metus rutrum sit.",
   "id" : 13,
@@ -109,7 +122,8 @@
   "isFavourite" : false,
   "name" : "Organic Chilli con Nachos",
   "price" : 7,
-  "producerId" : 1
+  "producerId" : 1,
+  "categoryId" : 4
 }, {
   "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer suscipit enim nec nunc ultrices vulputate. Curabitur aliquam vitae libero et ullamcorper. Curabitur dictum posuere neque, vitae porttitor metus rutrum sit.",
   "id" : 14,
@@ -117,7 +131,8 @@
   "isFavourite" : false,
   "name" : "Carolina Reaper Chilli",
   "price" : 21,
-  "producerId" : 1
+  "producerId" : 1,
+  "categoryId" : 4
 }, {
   "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer suscipit enim nec nunc ultrices vulputate. Curabitur aliquam vitae libero et ullamcorper. Curabitur dictum posuere neque, vitae porttitor metus rutrum sit.",
   "id" : 15,
@@ -125,7 +140,8 @@
   "isFavourite" : false,
   "name" : "Pickled Chilli",
   "price" : 10,
-  "producerId" : 1
+  "producerId" : 1,
+  "categoryId" : 4
 }, {
   "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer suscipit enim nec nunc ultrices vulputate. Curabitur aliquam vitae libero et ullamcorper. Curabitur dictum posuere neque, vitae porttitor metus rutrum sit.",
   "id" : 16,
@@ -133,7 +149,8 @@
   "isFavourite" : true,
   "name" : "Sweet Chilli Jam",
   "price" : 5,
-  "producerId" : 1
+  "producerId" : 1,
+  "categoryId" : 4
 }, {
   "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer suscipit enim nec nunc ultrices vulputate. Curabitur aliquam vitae libero et ullamcorper. Curabitur dictum posuere neque, vitae porttitor metus rutrum sit.",
   "id" : 17,
@@ -141,7 +158,8 @@
   "isFavourite" : false,
   "name" : "Statesman Taster 12-Set",
   "price" : 29,
-  "producerId" : 2
+  "producerId" : 2,
+  "categoryId" : 5
 }, {
   "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer suscipit enim nec nunc ultrices vulputate. Curabitur aliquam vitae libero et ullamcorper. Curabitur dictum posuere neque, vitae porttitor metus rutrum sit.",
   "id" : 18,
@@ -149,7 +167,8 @@
   "isFavourite" : false,
   "name" : "Cardhu Single Malt",
   "price" : 19,
-  "producerId" : 2
+  "producerId" : 2,
+  "categoryId" : 5
 }, {
   "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer suscipit enim nec nunc ultrices vulputate. Curabitur aliquam vitae libero et ullamcorper. Curabitur dictum posuere neque, vitae porttitor metus rutrum sit.",
   "id" : 19,
@@ -157,7 +176,8 @@
   "isFavourite" : false,
   "name" : "Bladnoch Double Black",
   "price" : 29,
-  "producerId" : 2
+  "producerId" : 2,
+  "categoryId" : 5
 }, {
   "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer suscipit enim nec nunc ultrices vulputate. Curabitur aliquam vitae libero et ullamcorper. Curabitur dictum posuere neque, vitae porttitor metus rutrum sit.",
   "id" : 20,
@@ -165,7 +185,8 @@
   "isFavourite" : false,
   "name" : "Alfred Giraud Comemorative Whisky",
   "price" : 49,
-  "producerId" : 2
+  "producerId" : 2,
+  "categoryId" : 5
 }, {
   "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer suscipit enim nec nunc ultrices vulputate. Curabitur aliquam vitae libero et ullamcorper. Curabitur dictum posuere neque, vitae porttitor metus rutrum sit.",
   "id" : 21,
@@ -173,7 +194,8 @@
   "isFavourite" : false,
   "name" : "Highland Wooden Whisky",
   "price" : 39,
-  "producerId" : 2
+  "producerId" : 2,
+  "categoryId" : 5
 }, {
   "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer suscipit enim nec nunc ultrices vulputate. Curabitur aliquam vitae libero et ullamcorper. Curabitur dictum posuere neque, vitae porttitor metus rutrum sit.",
   "id" : 22,
@@ -181,7 +203,8 @@
   "isFavourite" : false,
   "name" : "Hibiki Herbal Whisky",
   "price" : 69,
-  "producerId" : 2
+  "producerId" : 2,
+  "categoryId" : 5
 }, {
   "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer suscipit enim nec nunc ultrices vulputate. Curabitur aliquam vitae libero et ullamcorper. Curabitur dictum posuere neque, vitae porttitor metus rutrum sit.",
   "id" : 23,
@@ -189,7 +212,8 @@
   "isFavourite" : false,
   "name" : "LacLaughlin Olde Whiskey",
   "price" : 34,
-  "producerId" : 2
+  "producerId" : 2,
+  "categoryId" : 5
 }, {
   "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer suscipit enim nec nunc ultrices vulputate. Curabitur aliquam vitae libero et ullamcorper. Curabitur dictum posuere neque, vitae porttitor metus rutrum sit.",
   "id" : 24,
@@ -197,7 +221,8 @@
   "isFavourite" : false,
   "name" : "New Explorer Whisky",
   "price" : 59,
-  "producerId" : 2
+  "producerId" : 2,
+  "categoryId" : 5
 }, {
   "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer suscipit enim nec nunc ultrices vulputate. Curabitur aliquam vitae libero et ullamcorper. Curabitur dictum posuere neque, vitae porttitor metus rutrum sit.",
   "id" : 25,
@@ -205,7 +230,8 @@
   "isFavourite" : false,
   "name" : "Elijah Craig Comemorative",
   "price" : 89,
-  "producerId" : 2
+  "producerId" : 2,
+  "categoryId" : 5
 }, {
   "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer suscipit enim nec nunc ultrices vulputate. Curabitur aliquam vitae libero et ullamcorper. Curabitur dictum posuere neque, vitae porttitor metus rutrum sit.",
   "id" : 26,
@@ -213,7 +239,8 @@
   "isFavourite" : true,
   "name" : "Premium Liqueur 34YO Whisky",
   "price" : 149,
-  "producerId" : 2
+  "producerId" : 2,
+  "categoryId" : 5
 }, {
   "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer suscipit enim nec nunc ultrices vulputate. Curabitur aliquam vitae libero et ullamcorper. Curabitur dictum posuere neque, vitae porttitor metus rutrum sit.",
   "id" : 27,
@@ -221,7 +248,8 @@
   "isFavourite" : false,
   "name" : "Krantz Delight Triple Layer",
   "price" : 20,
-  "producerId" : 3
+  "producerId" : 3,
+  "categoryId" : 3
 }, {
   "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer suscipit enim nec nunc ultrices vulputate. Curabitur aliquam vitae libero et ullamcorper. Curabitur dictum posuere neque, vitae porttitor metus rutrum sit.",
   "id" : 28,
@@ -229,7 +257,8 @@
   "isFavourite" : false,
   "name" : "Single Chocolate Cake",
   "price" : 14,
-  "producerId" : 3
+  "producerId" : 3,
+  "categoryId" : 3
 }, {
   "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer suscipit enim nec nunc ultrices vulputate. Curabitur aliquam vitae libero et ullamcorper. Curabitur dictum posuere neque, vitae porttitor metus rutrum sit.",
   "id" : 29,
@@ -237,7 +266,8 @@
   "isFavourite" : true,
   "name" : "Double Chocolate Bomb",
   "price" : 22,
-  "producerId" : 3
+  "producerId" : 3,
+  "categoryId" : 3
 }, {
   "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer suscipit enim nec nunc ultrices vulputate. Curabitur aliquam vitae libero et ullamcorper. Curabitur dictum posuere neque, vitae porttitor metus rutrum sit.",
   "id" : 30,
@@ -245,7 +275,8 @@
   "isFavourite" : false,
   "name" : "Icy Frosted Cake",
   "price" : 15,
-  "producerId" : 3
+  "producerId" : 3,
+  "categoryId" : 3
 }, {
   "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer suscipit enim nec nunc ultrices vulputate. Curabitur aliquam vitae libero et ullamcorper. Curabitur dictum posuere neque, vitae porttitor metus rutrum sit.",
   "id" : 31,
@@ -253,7 +284,8 @@
   "isFavourite" : true,
   "name" : "Strawberry Velvet Cake",
   "price" : 17,
-  "producerId" : 3
+  "producerId" : 3,
+  "categoryId" : 3
 }, {
   "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer suscipit enim nec nunc ultrices vulputate. Curabitur aliquam vitae libero et ullamcorper. Curabitur dictum posuere neque, vitae porttitor metus rutrum sit.",
   "id" : 32,
@@ -261,7 +293,8 @@
   "isFavourite" : false,
   "name" : "Christmas Crisp Cake",
   "price" : 25,
-  "producerId" : 3
+  "producerId" : 3,
+  "categoryId" : 3
 }, {
   "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer suscipit enim nec nunc ultrices vulputate. Curabitur aliquam vitae libero et ullamcorper. Curabitur dictum posuere neque, vitae porttitor metus rutrum sit.",
   "id" : 33,
@@ -269,7 +302,8 @@
   "isFavourite" : false,
   "name" : "Rose Triple Layered",
   "price" : 31,
-  "producerId" : 3
+  "producerId" : 3,
+  "categoryId" : 3
 }, {
   "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer suscipit enim nec nunc ultrices vulputate. Curabitur aliquam vitae libero et ullamcorper. Curabitur dictum posuere neque, vitae porttitor metus rutrum sit.",
   "id" : 34,
@@ -277,7 +311,8 @@
   "isFavourite" : false,
   "name" : "Tropical Delight",
   "price" : 24,
-  "producerId" : 3
+  "producerId" : 3,
+  "categoryId" : 3
 }, {
   "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer suscipit enim nec nunc ultrices vulputate. Curabitur aliquam vitae libero et ullamcorper. Curabitur dictum posuere neque, vitae porttitor metus rutrum sit.",
   "id" : 35,
@@ -285,7 +320,8 @@
   "isFavourite" : false,
   "name" : "Strawberry Simple",
   "price" : 10,
-  "producerId" : 3
+  "producerId" : 3,
+  "categoryId" : 3
 }, {
   "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer suscipit enim nec nunc ultrices vulputate. Curabitur aliquam vitae libero et ullamcorper. Curabitur dictum posuere neque, vitae porttitor metus rutrum sit.",
   "id" : 36,
@@ -293,7 +329,8 @@
   "isFavourite" : false,
   "name" : "Chocoball Tower",
   "price" : 27,
-  "producerId" : 3
+  "producerId" : 3,
+  "categoryId" : 3
 }, {
   "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer suscipit enim nec nunc ultrices vulputate. Curabitur aliquam vitae libero et ullamcorper. Curabitur dictum posuere neque, vitae porttitor metus rutrum sit.",
   "id" : 37,
@@ -301,7 +338,8 @@
   "isFavourite" : true,
   "name" : "Flaming Tropical Cake",
   "price" : 19,
-  "producerId" : 3
+  "producerId" : 3,
+  "categoryId" : 3
 }, {
   "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer suscipit enim nec nunc ultrices vulputate. Curabitur aliquam vitae libero et ullamcorper. Curabitur dictum posuere neque, vitae porttitor metus rutrum sit.",
   "id" : 38,
@@ -309,7 +347,8 @@
   "isFavourite" : false,
   "name" : "Apricot Pastry",
   "price" : 3,
-  "producerId" : 4
+  "producerId" : 4,
+  "categoryId" : 7
 }, {
   "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer suscipit enim nec nunc ultrices vulputate. Curabitur aliquam vitae libero et ullamcorper. Curabitur dictum posuere neque, vitae porttitor metus rutrum sit.",
   "id" : 39,
@@ -317,7 +356,8 @@
   "isFavourite" : false,
   "name" : "Assorted Cupcakes",
   "price" : 7,
-  "producerId" : 4
+  "producerId" : 4,
+  "categoryId" : 7
 }, {
   "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer suscipit enim nec nunc ultrices vulputate. Curabitur aliquam vitae libero et ullamcorper. Curabitur dictum posuere neque, vitae porttitor metus rutrum sit.",
   "id" : 40,
@@ -325,7 +365,8 @@
   "isFavourite" : false,
   "name" : "White Flour Bread",
   "price" : 2,
-  "producerId" : 4
+  "producerId" : 4,
+  "categoryId" : 7
 }, {
   "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer suscipit enim nec nunc ultrices vulputate. Curabitur aliquam vitae libero et ullamcorper. Curabitur dictum posuere neque, vitae porttitor metus rutrum sit.",
   "id" : 41,
@@ -333,7 +374,8 @@
   "isFavourite" : true,
   "name" : "Butter Croissant",
   "price" : 1.5,
-  "producerId" : 4
+  "producerId" : 4,
+  "categoryId" : 7
 }, {
   "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer suscipit enim nec nunc ultrices vulputate. Curabitur aliquam vitae libero et ullamcorper. Curabitur dictum posuere neque, vitae porttitor metus rutrum sit.",
   "id" : 42,
@@ -341,7 +383,8 @@
   "isFavourite" : false,
   "name" : "Baguette",
   "price" : 3,
-  "producerId" : 4
+  "producerId" : 4,
+  "categoryId" : 7
 }, {
   "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer suscipit enim nec nunc ultrices vulputate. Curabitur aliquam vitae libero et ullamcorper. Curabitur dictum posuere neque, vitae porttitor metus rutrum sit.",
   "id" : 43,
@@ -349,5 +392,6 @@
   "isFavourite" : false,
   "name" : "Whole-Grain Seed Bread",
   "price" : 5,
-  "producerId" : 4
+  "producerId" : 4,
+  "categoryId" : 7
 } ]

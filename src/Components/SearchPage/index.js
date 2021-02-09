@@ -1,6 +1,5 @@
-import React, {useState, useContext} from "react"
+import React, {useEffect, useContext} from "react"
 
-import Firebase from "../../Firebase.js"
 import {DataContext} from "../../dataContext.js"
 
 import ProductCard from "./ProductCard"
@@ -11,28 +10,28 @@ function SearchPage() {
 
   const {categories, allProducers, allProducts} = useContext(DataContext)
 
-  const [filteredProducts, setFilteredProducts] = useState(allProducts)
-  const [priceRange, setPriceRange] = useState({min: "", max: ""})
-  const [producerFilter, setProducerFilter] = useState()
+  const {
+    filteredProducts, setFilteredProducts,
+    categoryFilterIDs, setCategoryFilterIDs,
+    producerFilterIDs, setProducerFilterIDs,
+    addProducerFilter, removeProducerFilter,
+    addCategoryFilter, removeCategoryFilter,
+    handlePriceChange,
+    setNameFilter, setPriceRange
+  } = useContext(DataContext)
 
-  const handleProducerFilter = (producer) => {
-    setProducerFilter(producer.name)
-    setFilteredProducts([])
-    Firebase.updateStateWithProducts(producer.id, setFilteredProducts)
-  }
-
-  const resetProducerFilter = () => {
-    setProducerFilter()
+  useEffect(() => {
+    categoryFilterIDs.length > 0 && allProducts.length > 0 ?
+    setFilteredProducts(allProducts.filter(product => categoryFilterIDs.includes(product.categoryId))) :
     setFilteredProducts(allProducts)
-  }
+    return () => {
+      setProducerFilterIDs([])
+      setCategoryFilterIDs([])
+      setNameFilter("")
+      setPriceRange({min: "", max: ""})
+    }
+  }, [])
 
-  const handlePriceChange = (e) => {
-    const {name, value} = e.target
-    setPriceRange(prevRange => ({
-      ...prevRange,
-      [name]: value
-    }))
-  }
 
   return (
     <div id="search-page">
@@ -45,8 +44,7 @@ function SearchPage() {
               type="number"
               className="price-field"
               name="min"
-              value={priceRange.min}
-              onChange={handlePriceChange}
+              onBlur={handlePriceChange}
               placeholder="min"
             />
             -
@@ -54,8 +52,7 @@ function SearchPage() {
               type="number"
               className="price-field"
               name="max"
-              value={priceRange.max}
-              onChange={handlePriceChange}
+              onBlur={handlePriceChange}
               placeholder="max"
             />
           </div>
@@ -64,24 +61,30 @@ function SearchPage() {
         <div id="category-filter">
           <div className="filter-title">
             <h3>Category</h3>
-            <button className="expand-button">Show all</button>
+            <button className="expand-button" onClick={() => producerFilterIDs.length > 0 ? null : setCategoryFilterIDs([])}>Clear</button>
           </div>
           <hr />
-          {categories.map(category => <p key={category.id} className="filter-choice">{category.name}</p>)}
+          {categories.map(category =>
+            <p
+              style={categoryFilterIDs.includes(category.id) ? {color: "#a0e000", fontWeight: 600} : {color: "#000000"}}
+              key={category.id}
+              className="filter-choice"
+              onClick={() => categoryFilterIDs.includes(category.id) ? removeCategoryFilter(category) : addCategoryFilter(category)}
+            >{category.name}</p>)}
         </div>
 
         <div id="producer-filter">
           <div className="filter-title">
             <h3>Producer</h3>
-            <button className="expand-button">Show all</button>
+            <button className="expand-button" onClick={() => categoryFilterIDs.length > 0 ? null : setProducerFilterIDs([])}>Clear</button>
           </div>
           <hr />
           {allProducers.map(producer =>
             <p
-              style={producerFilter === producer.name ? {color: "#a0e000"} : {color: "#000000"}}
+              style={producerFilterIDs.includes(producer.id) ? {color: "#a0e000", fontWeight: 600} : {color: "#000000"}}
               key={producer.id}
               className="filter-choice"
-              onClick={() => producerFilter ? resetProducerFilter() : handleProducerFilter(producer)}
+              onClick={() => producerFilterIDs.includes(producer.id) ? removeProducerFilter(producer) : addProducerFilter(producer)}
             >{producer.name}</p>)}
         </div>
 

@@ -1,4 +1,6 @@
-import React, {useState} from "react"
+import React, {useContext} from "react"
+
+import {DataContext} from "../../../dataContext.js"
 
 import menuToggle from "./Resources/menuToggle.png"
 import searchIcon from "./Resources/searchIcon.png"
@@ -8,30 +10,24 @@ import "./style.css"
 
 function SearchPageHeader() {
 
-  const [query, setQuery] = useState("")
-  const [nameFilter, setNameFilter] = useState("")
+  const {nameFilter, setNameFilter} = useContext(DataContext)
 
   const handleChange = (e) => {
-    setQuery(e.target.value)
-  }
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    setNameFilter(query)
+    setNameFilter(e.target.value)
   }
 
   return (
     <div id="search-header">
       <img id="search-menu-toggle" src={menuToggle} alt="burger" />
-      <form onSubmit={handleSubmit} id="search-bar-form">
+      <form onSubmit={(e) => e.preventDefault()} id="search-bar-form">
         <input
           id="search-bar"
           type="text"
-          value={query}
+          value={nameFilter}
           placeholder="Search..."
           onChange={handleChange}
         />
-        <button id="search-submit"><img id="search-bar-icon" src={searchIcon} alt="search" /></button>
+        <span id="search-bar-icon"><img id="search-icon" src={searchIcon} alt="search" /></span>
       </form>
     </div>
   )
