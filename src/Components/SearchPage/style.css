@@ -115,3 +115,9 @@ input::-webkit-inner-spin-button {
 a {
   text-decoration: none;
 }
+
+#no-results {
+  font-size: 34px;
+  font-weight: 600;
+  margin: auto;
+}

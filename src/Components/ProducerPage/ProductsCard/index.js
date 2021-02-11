@@ -16,10 +16,10 @@ function ProductsCard(props) {
       <div id="products-card-header">
         <h2 id="products-card-title">Products</h2>
         <div id="filters">
-          <div id="dropdown-div">
+          <button id="dropdown-button">
             <h3>Filters</h3>
             <img id="dropdown-arrow" src={rightArrow} alt="" />
-          </div>
+          </button>
           <button id="clear-button">Clear filters</button>
         </div>
       </div>

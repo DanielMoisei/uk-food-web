@@ -16,8 +16,8 @@ function SearchPage() {
     producerFilterIDs, setProducerFilterIDs,
     addProducerFilter, removeProducerFilter,
     addCategoryFilter, removeCategoryFilter,
-    handlePriceChange,
-    setNameFilter, setPriceRange
+    priceRange, setPriceRange,
+    handlePriceChange, setNameFilter
   } = useContext(DataContext)
 
   useEffect(() => {
@@ -44,7 +44,8 @@ function SearchPage() {
               type="number"
               className="price-field"
               name="min"
-              onBlur={handlePriceChange}
+              value={priceRange.min}
+              onChange={handlePriceChange}
               placeholder="min"
             />
             -
@@ -52,7 +53,8 @@ function SearchPage() {
               type="number"
               className="price-field"
               name="max"
-              onBlur={handlePriceChange}
+              value={priceRange.max}
+              onChange={handlePriceChange}
               placeholder="max"
             />
           </div>
@@ -61,7 +63,7 @@ function SearchPage() {
         <div id="category-filter">
           <div className="filter-title">
             <h3>Category</h3>
-            <button className="expand-button" onClick={() => producerFilterIDs.length > 0 ? null : setCategoryFilterIDs([])}>Clear</button>
+            <button className="expand-button" onClick={() => setCategoryFilterIDs([])}>Clear</button>
           </div>
           <hr />
           {categories.map(category =>
@@ -76,7 +78,7 @@ function SearchPage() {
         <div id="producer-filter">
           <div className="filter-title">
             <h3>Producer</h3>
-            <button className="expand-button" onClick={() => categoryFilterIDs.length > 0 ? null : setProducerFilterIDs([])}>Clear</button>
+            <button className="expand-button" onClick={() => setProducerFilterIDs([])}>Clear</button>
           </div>
           <hr />
           {allProducers.map(producer =>
@@ -90,8 +92,12 @@ function SearchPage() {
 
       </div>
 
-      <div id="products-area">
-        {filteredProducts.length ? filteredProducts.map(product => <ProductCard key={product.id} product={product} />) : null}
+      <div id="products-area" style={filteredProducts.length <= 0 ? {height: 782} : null}>
+        {
+          filteredProducts.length ?
+          filteredProducts.map(product => <ProductCard key={product.id} product={product} />) :
+          <h1 id="no-results">No results</h1>
+        }
       </div>
 
     </div>

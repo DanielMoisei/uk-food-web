@@ -1,0 +1,46 @@
+#wide-sidebar {
+	background-color: #192932;
+	width: 300px;
+	height: 100vh;
+  z-index: 4;
+  position: fixed;
+  transition-delay: 2s all;
+}
+
+#wide-sidebar-logo {
+	width: 200px;
+	height: 40px;
+	margin: 8.5px auto;
+	display: flex;
+}
+
+#wide-sidebar-search {
+  display: flex;
+  flex-flow: row;
+	margin: 20px auto;
+	width: 200px;
+	height: 55px;
+	z-index: 2;
+}
+
+#wide-sidebar-search-icon {
+	width: 26px;
+	height: 26px;
+  margin: auto 0;
+}
+
+#wide-search-text {
+  font-size: 20px;
+  color: #fff;
+  font-weight: 600;
+  margin: auto 0 auto 20px;
+}
+
+#wide-overlay {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(1, 11, 25, 0.4);
+  position: fixed;
+  z-index: 3;
+  top: 0;
+}

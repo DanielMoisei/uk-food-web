@@ -10,7 +10,7 @@ import "./style.css"
 
 function SearchPageHeader() {
 
-  const {nameFilter, setNameFilter} = useContext(DataContext)
+  const {setIsSidebarExpanded, nameFilter, setNameFilter} = useContext(DataContext)
 
   const handleChange = (e) => {
     setNameFilter(e.target.value)
@@ -18,7 +18,7 @@ function SearchPageHeader() {
 
   return (
     <div id="search-header">
-      <img id="search-menu-toggle" src={menuToggle} alt="burger" />
+      <img id="search-menu-toggle" src={menuToggle} alt="burger" onClick={() => setIsSidebarExpanded(true)} />
       <form onSubmit={(e) => e.preventDefault()} id="search-bar-form">
         <input
           id="search-bar"

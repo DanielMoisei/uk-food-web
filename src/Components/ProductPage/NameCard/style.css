@@ -4,7 +4,7 @@
   flex-flow: row;
   background-color: #fff;
   border-radius: 15px;
-  margin: 30px auto 15px;
+  margin: 30px auto 15px 0;
 }
 
 #main-product-card h1 {

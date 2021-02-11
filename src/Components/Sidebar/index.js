@@ -1,26 +1,21 @@
-import React from "react"
-import {Link} from "react-router-dom"
+import React, {useContext}  from "react"
 
-import logoSmall from "./Resources/logoSmall.png"
-import searchIcon from "./Resources/searchIconWhite.png"
+import {DataContext} from "../../dataContext.js"
+
+import ThinSidebar from "./ThinSidebar"
+import WideSidebar from "./WideSidebar"
 
 import "./style.css"
 
 function Sidebar() {
+
+  const {isSidebarExpanded} = useContext(DataContext)
+
   return (
-    <div id="sidebar">
-
-      <Link to="/">
-        <img id="sidebar-logo" src={logoSmall} alt="logo" />
-      </Link>
-
-      <Link to="/search">
-        <div id="sidebar-search-square">
-          <img id="sidebar-search" src={searchIcon} alt="search" />
-        </div>
-      </Link>
-
-    </div>
+    <>
+      <ThinSidebar />
+      {isSidebarExpanded ? <WideSidebar /> : null}
+    </>
   )
 }
 

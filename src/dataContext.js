@@ -5,6 +5,8 @@ const DataContext = React.createContext()
 
 function DataContextProvider(props) {
 
+  const [isSidebarExpanded, setIsSidebarExpanded] = useState(false)
+
   // GENERAL DATA STATE
   const [allProducts, setAllProducts] = useState([])
   const [allProducers, setAllProducers] = useState([])
@@ -30,72 +32,22 @@ function DataContextProvider(props) {
   const [producerFilterIDs, setProducerFilterIDs] = useState([])
   const [priceRange, setPriceRange] = useState({min: "", max: ""})
 
-  const addCategoryFilter = (category) => {
-    if(producerFilterIDs.length > 0) {
-      return null
-    } else {
-      setCategoryFilterIDs(prevFilter => prevFilter.concat(category.id))
-    }
-  }
+  const addCategoryFilter = (category) => setCategoryFilterIDs(prevFilter => prevFilter.concat(category.id))
+  const removeCategoryFilter = (category) => setCategoryFilterIDs(categoryFilterIDs.filter(id => id !== category.id))
 
-  const removeCategoryFilter = (category) => {
-    setCategoryFilterIDs(categoryFilterIDs.filter(id => id !== category.id))
-  }
-
-  const addProducerFilter = (producer) => {
-    if(categoryFilterIDs.length > 0) {
-      return null
-    } else {
-      setProducerFilterIDs(prevFilter => prevFilter.concat(producer.id))
-    }
-  }
-
-  const removeProducerFilter = (producer) => {
-    setProducerFilterIDs(producerFilterIDs.filter(id => id !== producer.id))
-  }
-
-  const filterProducerNormal = () => setFilteredProducts(producerFilterIDs.length ? allProducts.filter(product => producerFilterIDs.includes(product.producerId)) : allProducts)
-  const filterCategoryNormal = () => setFilteredProducts(categoryFilterIDs.length ? allProducts.filter(product => categoryFilterIDs.includes(product.categoryId)) : allProducts)
-  const filterNameNormal = () => setFilteredProducts(allProducts.filter(product => product.name.toLowerCase().match(nameFilter.toLowerCase())))
-
-  const filterProducerMulti = () => setFilteredProducts(prevProducts => producerFilterIDs.length ? prevProducts.filter(product => producerFilterIDs.includes(product.producerId)) : prevProducts)
-  const filterCategoryMulti = () => setFilteredProducts(prevProducts => categoryFilterIDs.length ? prevProducts.filter(product => categoryFilterIDs.includes(product.categoryId)) : prevProducts)
-  const filterNameMulti = () => setFilteredProducts(prevProducts => prevProducts.filter(product => product.name.toLowerCase().match(nameFilter.toLowerCase())))
-
-  const filterPriceNormal = () => {
-    if (priceRange.min !== "" && priceRange.max !== "") {
-      setFilteredProducts(allProducts.filter(product => parseInt(priceRange.min) <= product.price && product.price <= parseInt(priceRange.max)))
-    } else if (priceRange.min !== "") {
-      setFilteredProducts(allProducts.filter(product => parseInt(priceRange.min) <= product.price))
-    } else if (priceRange.max !== "") {
-      setFilteredProducts(allProducts.filter(product => product.price <= parseInt(priceRange.max)))
-    } else if (priceRange.max === "" && priceRange.min === "") {
-      setFilteredProducts(allProducts)
-    }
-  }
-
-  const filterPriceMulti = () => {
-    if (priceRange.min !== "" && priceRange.max !== "") {
-      setFilteredProducts(prevProducts => prevProducts.filter(product => parseInt(priceRange.min) <= product.price && product.price <= parseInt(priceRange.max)))
-    } else if (priceRange.min !== "") {
-      setFilteredProducts(prevProducts => prevProducts.filter(product => parseInt(priceRange.min) <= product.price))
-    } else if (priceRange.max !== "") {
-      setFilteredProducts(prevProducts => prevProducts.filter(product => product.price <= parseInt(priceRange.max)))
-    }
-  }
+  const addProducerFilter = (producer) => setProducerFilterIDs(prevFilter => prevFilter.concat(producer.id))
+  const removeProducerFilter = (producer) => setProducerFilterIDs(producerFilterIDs.filter(id => id !== producer.id))
 
   useEffect(() => {
-    if (producerFilterIDs.length > 0 || categoryFilterIDs.length > 0 || nameFilter !== "") {
-      filterProducerMulti()
-      filterCategoryMulti()
-      filterNameMulti()
-      filterPriceMulti()
-    } else {
-      filterProducerNormal()
-      filterCategoryNormal()
-      filterNameNormal()
-      filterPriceNormal()
-    }
+    let newProducts = allProducts
+    newProducts = producerFilterIDs.length ? newProducts.filter(product => producerFilterIDs.includes(product.producerId)) : newProducts
+    newProducts = categoryFilterIDs.length ? newProducts.filter(product => categoryFilterIDs.includes(product.categoryId)) : newProducts
+    newProducts = nameFilter !== "" ? newProducts.filter(product => product.name.toLowerCase().match(nameFilter.toLowerCase())) : newProducts
+    newProducts = priceRange.min !== "" && priceRange.max !== "" ? newProducts.filter(product => parseInt(priceRange.min) <= product.price && product.price <= parseInt(priceRange.max)) : newProducts
+    newProducts = priceRange.min !== "" ? newProducts.filter(product => parseInt(priceRange.min) <= product.price) : newProducts
+    newProducts = priceRange.max !== "" ? newProducts.filter(product => product.price <= parseInt(priceRange.max)) : newProducts
+
+    setFilteredProducts(newProducts)
   }, [producerFilterIDs, categoryFilterIDs, priceRange, nameFilter])
 
   const handlePriceChange = (e) => {
@@ -109,6 +61,7 @@ function DataContextProvider(props) {
   return (
     <DataContext.Provider
       value={{
+        isSidebarExpanded, setIsSidebarExpanded, 
         allProducts, setAllProducts,
         allProducers, setAllProducers,
         categories, setCategories,
