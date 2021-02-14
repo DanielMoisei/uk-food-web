@@ -4,7 +4,7 @@
 	background-color: #fff;
 	border-radius: 15px;
 	display: flex;
-	flex-flow: row wrap;
+	flex-flow: column;
 	transition: 0.5s all;
 }
 

@@ -61,6 +61,10 @@ input::-webkit-inner-spin-button {
   margin: 0;
 }
 
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
 #category-filter {
   width: 270px;
   margin: 50px 0 0 auto;
@@ -106,10 +110,16 @@ input::-webkit-inner-spin-button {
 }
 
 #products-area {
-  width: 1465px;
   display: flex;
   flex-flow: row wrap;
-  margin: 50px 0 10px auto;
+  margin: 50px 0 10px 400px;
+  justify-content: space-between;
+  align-content: space-between;
+}
+
+#products-area::after {
+  content: "";
+  flex: auto;
 }
 
 a {
