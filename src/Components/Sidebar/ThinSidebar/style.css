@@ -1,24 +1,30 @@
-#sidebar {
+#thin-sidebar {
 	background-color: #192932;
 	width: 55px;
 	height: 100vh;
 }
 
-#sidebar-logo {
+#thin-sidebar-logo {
 	width: 38px;
 	height: 38px;
 	margin: 8.5px auto;
 	display: flex;
 }
 
-#sidebar-search-square {
-	margin-top: 11.5px;
+#thin-sidebar-search-square {
+	margin-top: 20px;
 	width: 55px;
 	height: 55px;
 	z-index: 2;
+	display: flex;
 }
 
-#sidebar-search {
-	width: 55px;
-	height: 55px;
+#thin-sidebar-search-square:hover {
+	background: #fff;
+}
+
+#thin-sidebar-search {
+	width: 26px;
+	height: 26px;
+	margin: auto;
 }
