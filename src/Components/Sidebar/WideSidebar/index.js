@@ -11,15 +11,15 @@ import "./style.css"
 
 function WideSidebar(props) {
 
-  const {setIsSidebarExpanded} = useContext(DataContext)
+  const {setIsSidebarExpanded, isSidebarExpanded} = useContext(DataContext)
   const [searchIcon, setSearchIcon] = useState(searchIconWhite)
 
   return (
     <>
-      <div id="wide-overlay" onClick={() => setIsSidebarExpanded(false)}>
+      <div id={isSidebarExpanded ? "wide-overlay-active" : "wide-overlay-hidden"} onClick={() => setIsSidebarExpanded(false)}>
       </div>
 
-      <div id="wide-sidebar">
+      <div id= {isSidebarExpanded ? "wide-sidebar-active" : "wide-sidebar-hidden"}>
 
         <Link to="/" onClick={() => setIsSidebarExpanded(false)}>
           <img id="wide-sidebar-logo" src={logoLarge} alt="logo" />

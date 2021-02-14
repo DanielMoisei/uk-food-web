@@ -29,15 +29,17 @@ function FeaturedProducers(props) {
       >
 
           {allProducers.map(producer => {
-            return (
-              <Link key={producer.id} to={"/producer/" + producer.name}>
-                <div className="producer-div-style">
-                  <img src={producer.logoLarge} alt="producerLogo" />
-                  <h2>{producer.name}</h2>
-                </div>
-              </Link>
-            )}
-          )}
+            if(producer.id <= 4) {
+              return (
+                <Link key={producer.id} to={"/producer/" + producer.name}>
+                  <div className="producer-div-style">
+                    <img src={producer.logoLarge} alt="producerLogo" />
+                    <h2>{producer.name}</h2>
+                  </div>
+                </Link>
+              )
+            }
+          })}
 
       </Carousel>
 

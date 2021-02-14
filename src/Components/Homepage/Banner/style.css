@@ -25,14 +25,19 @@
 }
 
 #learn-more-banner-button {
-	margin-top: 12.5px;
-	margin-right: auto;
-	padding: 13px 32px 13px 32px;
+	margin: 12.5px auto 0 0;
+	padding: 13px 32px;
 	font-size: 18px;
 	font-weight: 700;
 	color: #fff;
 	background-color: #192932;
 	border-radius: 10px;
+	border: none;
+	outline: none;
+}
+
+#learn-more-banner-button:hover {
+	cursor: pointer;
 }
 
 #banner-image {

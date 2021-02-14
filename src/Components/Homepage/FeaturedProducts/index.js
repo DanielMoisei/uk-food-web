@@ -29,11 +29,11 @@ function FeaturedProducts(props) {
       >
           {allProducts.map(product => {
             return (
-              <div key={product.id} className="product-div-style">
-                <Link to={"/product/" + product.name}>
+              <Link key={product.id} to={"/product/" + product.name}>
+                <div className="product-div-style">
                   <img src={product.images[0]} alt="" />
-                </Link>
-              </div>
+                </div>
+              </Link>
             )
           })}
       </Carousel>

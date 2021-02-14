@@ -12,7 +12,7 @@ function Banner() {
         <img id="banner-logo" src={logoLarge} alt="logo" />
         <p className="banner-text">We're your portal to craft and artisan producers.</p>
         <p className="banner-text">Proudly connecting Producers with Consumers and Businesses, home and abroad.</p>
-        <p id="learn-more-banner-button">Learn more</p>
+        <a href="https://ukfoodweb.info" target="_blank"><button id="learn-more-banner-button">Learn more</button></a>
       </div>
       <img id="banner-image" src={bannerImage} alt="food" />
     </div>

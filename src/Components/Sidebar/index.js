@@ -5,8 +5,6 @@ import {DataContext} from "../../dataContext.js"
 import ThinSidebar from "./ThinSidebar"
 import WideSidebar from "./WideSidebar"
 
-import "./style.css"
-
 function Sidebar() {
 
   const {isSidebarExpanded} = useContext(DataContext)
@@ -14,7 +12,8 @@ function Sidebar() {
   return (
     <>
       <ThinSidebar />
-      {isSidebarExpanded ? <WideSidebar /> : null}
+      {/* isSidebarExpanded ? <WideSidebar /> : null */}
+      <WideSidebar />
     </>
   )
 }

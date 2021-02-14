@@ -83,6 +83,10 @@
   margin: 0 0 0 auto;
 }
 
+#fav-row img:hover {
+  cursor: pointer;
+}
+
 #price-tag {
   background-color: #192932;
   color: #fff;
