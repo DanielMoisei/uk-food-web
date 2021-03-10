@@ -8,8 +8,8 @@
 }
 
 @keyframes slide-in {
-	from {transform: translate3d(-100%, 0, 0);}
-	to {transform: translate3d(0, 0, 0);}
+	from {transform: translateX(-100%);}
+	to {transform: translateX(0);}
 }
 
 #wide-sidebar-hidden {
@@ -19,7 +19,7 @@
 	z-index: 4;
 	position: fixed;
 	transition: all 0.5s ease-in;
-	transform: translate3d(-100%, 0, 0);
+	transform: translateX(-100%);
 }
 
 #wide-overlay-active {
@@ -69,6 +69,42 @@
 }
 
 #wide-search-text {
+  font-size: 20px;
+  color: #fff;
+  font-weight: 600;
+  margin: auto 0 auto auto;
+}
+
+
+//////////
+
+#wide-sidebar-leave {
+	width: 300px;
+}
+
+#wide-sidebar-leave:hover {
+	background: #fff;
+}
+
+#wide-sidebar-leave:hover h3 {
+	color: #192932;
+}
+
+#wide-leave-content {
+	display: flex;
+	flex-flow: row;
+	margin: 20px auto;
+	width: 200px;
+	height: 55px;
+}
+
+#wide-sidebar-leave-icon {
+	width: 32px;
+	height: 32px;
+  margin: auto 0 auto 6px;
+}
+
+#wide-leave-text {
   font-size: 20px;
   color: #fff;
   font-weight: 600;

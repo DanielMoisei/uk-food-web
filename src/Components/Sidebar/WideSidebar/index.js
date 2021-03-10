@@ -6,6 +6,8 @@ import {DataContext} from "../../../dataContext.js"
 import logoLarge from "./Resources/logoLarge.png"
 import searchIconWhite from "./Resources/searchIconWhite.png"
 import searchIconNavy from "./Resources/searchIconNavy.png"
+import leaveIconWhite from "./Resources/leaveIconWhite.svg"
+import leaveIconNavy from "./Resources/leaveIconNavy.svg"
 
 import "./style.css"
 
@@ -13,6 +15,7 @@ function WideSidebar(props) {
 
   const {setIsSidebarExpanded, isSidebarExpanded} = useContext(DataContext)
   const [searchIcon, setSearchIcon] = useState(searchIconWhite)
+  const [leaveIcon, setLeaveIcon] = useState(leaveIconWhite)
 
   return (
     <>
@@ -35,6 +38,20 @@ function WideSidebar(props) {
             <div id="wide-search-content">
               <img id="wide-sidebar-search-icon" src={searchIcon} alt="search" />
               <h3 id="wide-search-text">Search products</h3>
+            </div>
+          </div>
+        </Link>
+
+        <Link to="/REPLACEME">
+          <div
+            id="wide-sidebar-leave"
+            onClick={() => setIsSidebarExpanded(false)}
+            onMouseEnter={() => setLeaveIcon(leaveIconNavy)}
+            onMouseLeave={() => setLeaveIcon(leaveIconWhite)}
+          >
+            <div id="wide-leave-content">
+              <img id="wide-sidebar-leave-icon" src={leaveIcon} alt="leave" />
+              <h3 id="wide-leave-text">Leave this app</h3>
             </div>
           </div>
         </Link>

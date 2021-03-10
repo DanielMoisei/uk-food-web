@@ -28,3 +28,21 @@
 	height: 26px;
 	margin: auto;
 }
+
+#thin-sidebar-leave-square {
+	margin-top: 20px;
+	width: 55px;
+	height: 55px;
+	z-index: 2;
+	display: flex;
+}
+
+#thin-sidebar-leave-square:hover {
+	background: #fff;
+}
+
+#thin-sidebar-leave {
+	width: 32px;
+	height: 32px;
+	margin: auto 5px auto 10px;
+}
