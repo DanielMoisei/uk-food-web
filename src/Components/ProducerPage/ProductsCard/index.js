@@ -3,7 +3,6 @@ import React, {useContext} from "react"
 import {DataContext} from "../../../dataContext.js"
 
 import Product from "./Product"
-import rightArrow from "./Resources/rightArrow.svg"
 
 import "./style.css"
 
@@ -18,7 +17,7 @@ function ProductsCard(props) {
         <div id="filters">
           <button id="dropdown-button">
             <h3>Filters</h3>
-            <img id="dropdown-arrow" src={rightArrow} alt="" />
+            <img id="dropdown-arrow" src="https://res.cloudinary.com/dbtu3hb0f/image/upload/v1615802155/UKFoodWeb/Homepage_Misc/rightArrow_gdczqb.svg" alt="" />
           </button>
           <button id="clear-button">Clear filters</button>
         </div>

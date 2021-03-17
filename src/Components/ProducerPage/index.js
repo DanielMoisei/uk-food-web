@@ -8,8 +8,6 @@ import NameCard from "./NameCard"
 import MediaCard from "./MediaCard"
 import ProductsCard from "./ProductsCard"
 
-import backArrow from "./Resources/backArrow.svg"
-
 import "./style.css"
 
 function ProducerPage(props) {
@@ -30,7 +28,7 @@ function ProducerPage(props) {
   return (
     <div id="producer-page">
       <button id="back-button" onClick={() => history.goBack()}>
-        <img src={backArrow} alt=""/>
+        <img src="https://res.cloudinary.com/dbtu3hb0f/image/upload/v1615802153/UKFoodWeb/Homepage_Misc/backArrow_asteca.svg" alt=""/>
       </button>
       <div id="producer-page-cards">
         <NameCard thisProducer={thisProducer} />

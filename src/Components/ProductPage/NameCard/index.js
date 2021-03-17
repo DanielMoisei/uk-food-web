@@ -5,8 +5,6 @@ import {DataContext} from "../../../dataContext.js"
 
 import Carousel from '@brainhubeu/react-carousel'
 import '@brainhubeu/react-carousel/lib/style.css'
-import leftArrow from "./Resources/leftArrow.svg"
-import rightArrow from "./Resources/rightArrow.svg"
 
 import "./style.css"
 
@@ -25,8 +23,8 @@ function NameCard(props) {
         <Carousel
           slidesPerPage={4}
           slidesPerScroll={4}
-          arrowLeft={<img id="arrow-left" src={leftArrow} alt="arrow" />}
-          arrowRight={<img id="arrow-right" src={rightArrow} alt="arrow" />}
+          arrowLeft={<img id="arrow-left" src="https://res.cloudinary.com/dbtu3hb0f/image/upload/v1615802154/UKFoodWeb/Homepage_Misc/leftArrow_eb5rcz.svg" alt="arrow" />}
+          arrowRight={<img id="arrow-right" src="https://res.cloudinary.com/dbtu3hb0f/image/upload/v1615802155/UKFoodWeb/Homepage_Misc/rightArrow_gdczqb.svg" alt="arrow" />}
           addArrowClickHandler
           className="product-car"
         >
@@ -43,8 +41,8 @@ function NameCard(props) {
           <div id="fav-row">
             <h2>Producer: <Link to={"/producer/" + relProducer.name}>{relProducer.name}</Link></h2>
             <img src={product.isFavourite ?
-              "https://res.cloudinary.com/dbtu3hb0f/image/upload/v1611164917/starGreen_vh0tgd.png" :
-              "https://res.cloudinary.com/dbtu3hb0f/image/upload/v1611164917/starGray_xm5y3y.png"}
+              "https://res.cloudinary.com/dbtu3hb0f/image/upload/v1615802156/UKFoodWeb/Homepage_Misc/starGreen_skispc.png" :
+              "https://res.cloudinary.com/dbtu3hb0f/image/upload/v1615802156/UKFoodWeb/Homepage_Misc/starGray_anuyus.png"}
               alt="isFav"
             />
           </div>

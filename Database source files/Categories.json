@@ -1,34 +1,34 @@
 [ {
   "id" : 0,
-  "image" : "https://res.cloudinary.com/dbtu3hb0f/image/upload/v1609929534/Categories/chocolate_cmzmky.jpg",
+  "image" : "https://res.cloudinary.com/dbtu3hb0f/image/upload/v1615802110/UKFoodWeb/Categories/chocolate_dvmdtw.jpg",
   "name" : "Chocolate"
 }, {
   "id" : 1,
-  "image" : "https://res.cloudinary.com/dbtu3hb0f/image/upload/v1609929534/Categories/gin_izq8q0.jpg",
+  "image" : "https://res.cloudinary.com/dbtu3hb0f/image/upload/v1615802110/UKFoodWeb/Categories/gin_ozecbi.jpg",
   "name" : "Gin"
 }, {
   "id" : 2,
-  "image" : "https://res.cloudinary.com/dbtu3hb0f/image/upload/v1609929677/Categories/softDrinks_ixcus9.jpg",
+  "image" : "https://res.cloudinary.com/dbtu3hb0f/image/upload/v1615802110/UKFoodWeb/Categories/softDrinks_act4im.jpg",
   "name" : "Soft drinks"
 }, {
   "id" : 3,
-  "image" : "https://res.cloudinary.com/dbtu3hb0f/image/upload/v1609929534/Categories/cakes_msliba.png",
+  "image" : "https://res.cloudinary.com/dbtu3hb0f/image/upload/v1615802110/UKFoodWeb/Categories/cakes_kvkfec.png",
   "name" : "Cakes"
 }, {
   "id" : 4,
-  "image" : "https://res.cloudinary.com/dbtu3hb0f/image/upload/v1609929534/Categories/chilliSauces_dvq84y.jpg",
+  "image" : "https://res.cloudinary.com/dbtu3hb0f/image/upload/v1615802110/UKFoodWeb/Categories/chilliSauces_br3ixc.jpg",
   "name" : "Chilli & Sauces"
 }, {
   "id" : 5,
-  "image" : "https://res.cloudinary.com/dbtu3hb0f/image/upload/v1609929535/Categories/whisky_q3hdc3.jpg",
+  "image" : "https://res.cloudinary.com/dbtu3hb0f/image/upload/v1615802110/UKFoodWeb/Categories/whisky_vph1bp.jpg",
   "name" : "Whisky"
 }, {
   "id" : 6,
-  "image" : "https://res.cloudinary.com/dbtu3hb0f/image/upload/v1609929535/Categories/freshVegetables_xnuzvr.png",
+  "image" : "https://res.cloudinary.com/dbtu3hb0f/image/upload/v1615802110/UKFoodWeb/Categories/freshVegetables_yhgulp.png",
   "name" : "Fresh vegetables"
 }, {
   "id" : 7,
-  "image" : "https://res.cloudinary.com/dbtu3hb0f/image/upload/v1609929534/Categories/bakery_lrsvbg.jpg",
+  "image" : "https://res.cloudinary.com/dbtu3hb0f/image/upload/v1615802110/UKFoodWeb/Categories/bakery_vwvqma.jpg",
   "name" : "Bakery"
 }
 ]

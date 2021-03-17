@@ -2,8 +2,6 @@ import React, {useContext} from "react"
 
 import {DataContext} from "../../dataContext.js"
 
-import menuToggle from "./Resources/menuToggle.png"
-
 import "./style.css"
 
 function Header() {
@@ -12,7 +10,12 @@ function Header() {
 
   return (
     <div id="header">
-      <img id="menu-toggle" src={menuToggle} alt="burger" onClick={() => setIsSidebarExpanded(true)} />
+      <img
+        id="menu-toggle"
+        src="https://res.cloudinary.com/dbtu3hb0f/image/upload/v1615802155/UKFoodWeb/Homepage_Misc/menuToggle_ko8ivf.png"
+        alt="burger"
+        onClick={() => setIsSidebarExpanded(true)}
+      />
     </div>
   )
 }

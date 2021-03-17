@@ -2,8 +2,6 @@ import React, {useState, useEffect} from "react"
 
 import Carousel from '@brainhubeu/react-carousel'
 import '@brainhubeu/react-carousel/lib/style.css'
-import leftArrow from "./Resources/leftArrow.svg"
-import rightArrow from "./Resources/rightArrow.svg"
 
 import "./style.css"
 
@@ -43,8 +41,8 @@ function MediaCard(props) {
         <Carousel
           slidesPerPage={7}
           slidesPerScroll={7}
-          arrowLeft={<img id="arrow-left" src={leftArrow} alt="arrow" />}
-          arrowRight={<img id="arrow-right" src={rightArrow} alt="arrow" />}
+          arrowLeft={<img id="arrow-left" src="https://res.cloudinary.com/dbtu3hb0f/image/upload/v1615802154/UKFoodWeb/Homepage_Misc/leftArrow_eb5rcz.svg" alt="arrow" />}
+          arrowRight={<img id="arrow-right" src="https://res.cloudinary.com/dbtu3hb0f/image/upload/v1615802155/UKFoodWeb/Homepage_Misc/rightArrow_gdczqb.svg" alt="arrow" />}
           addArrowClickHandler
           className="producer-car"
         >

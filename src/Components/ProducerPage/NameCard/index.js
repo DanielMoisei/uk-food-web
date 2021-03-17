@@ -17,8 +17,8 @@ function NameCard(props) {
         </div>
 
         {producer.isFavourite ?
-          <img className="fav-star" src="https://res.cloudinary.com/dbtu3hb0f/image/upload/v1611164917/starGreen_vh0tgd.png" alt="star" /> :
-          <img className="fav-star" src="https://res.cloudinary.com/dbtu3hb0f/image/upload/v1611164917/starGray_xm5y3y.png" alt="star" />}
+          <img className="fav-star" src="https://res.cloudinary.com/dbtu3hb0f/image/upload/v1615802156/UKFoodWeb/Homepage_Misc/starGreen_skispc.png" alt="star" /> :
+          <img className="fav-star" src="https://res.cloudinary.com/dbtu3hb0f/image/upload/v1615802156/UKFoodWeb/Homepage_Misc/starGray_anuyus.png" alt="star" />}
       </div>
     </div>
   )

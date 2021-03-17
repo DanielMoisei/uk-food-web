@@ -21,7 +21,7 @@ time, mark, audio, video {
 }
 
 #body {
-	background-image: url("./Resources/background.jpeg");
+	background-image: url("https://res.cloudinary.com/dbtu3hb0f/image/upload/v1615802153/UKFoodWeb/Homepage_Misc/background_lgya0l.jpg");
 	background-repeat: repeat;
 	display: flex;
 	flex-direction: row;

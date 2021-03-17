@@ -6,8 +6,6 @@ import {DataContext} from "../../../dataContext.js"
 import Carousel from '@brainhubeu/react-carousel'
 import '@brainhubeu/react-carousel/lib/style.css'
 import "./style.css"
-import leftArrow from "./Resources/leftArrow.svg"
-import rightArrow from "./Resources/rightArrow.svg"
 
 function FeaturedProducers(props) {
 
@@ -22,8 +20,8 @@ function FeaturedProducers(props) {
         slidesPerPage={4}
         slidesPerScroll={4}
         infinite
-        arrowLeft={<img className="slides-arrow" src={leftArrow} alt="arrow" />}
-        arrowRight={<img className="slides-arrow" src={rightArrow} alt="arrow" />}
+        arrowLeft={<img className="slides-arrow" src="https://res.cloudinary.com/dbtu3hb0f/image/upload/v1615802154/UKFoodWeb/Homepage_Misc/leftArrow_eb5rcz.svg" alt="arrow" />}
+        arrowRight={<img className="slides-arrow" src="https://res.cloudinary.com/dbtu3hb0f/image/upload/v1615802155/UKFoodWeb/Homepage_Misc/rightArrow_gdczqb.svg" alt="arrow" />}
         addArrowClickHandler
         className="producers-container"
       >
