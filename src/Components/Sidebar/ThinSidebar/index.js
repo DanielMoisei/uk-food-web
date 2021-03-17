@@ -25,16 +25,6 @@ function ThinSidebar() {
         </div>
       </Link>
 
-      <Link to="/REPLACEME">
-        <div
-          id="thin-sidebar-leave-square"
-          onMouseEnter={() => setLeaveIcon("https://res.cloudinary.com/dbtu3hb0f/image/upload/v1615802153/UKFoodWeb/Homepage_Misc/leaveIconNavy_ogmzvl.svg")}
-          onMouseLeave={() => setLeaveIcon("https://res.cloudinary.com/dbtu3hb0f/image/upload/v1615802154/UKFoodWeb/Homepage_Misc/leaveIconWhite_tnfagx.svg")}
-        >
-          <img id="thin-sidebar-leave" src={leaveIcon} alt="leave" />
-        </div>
-      </Link>
-
     </div>
   )
 }

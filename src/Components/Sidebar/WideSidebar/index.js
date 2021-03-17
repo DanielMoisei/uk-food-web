@@ -36,20 +36,6 @@ function WideSidebar(props) {
           </div>
         </Link>
 
-        <Link to="/REPLACEME">
-          <div
-            id="wide-sidebar-leave"
-            onClick={() => setIsSidebarExpanded(false)}
-            onMouseEnter={() => setLeaveIcon("https://res.cloudinary.com/dbtu3hb0f/image/upload/v1615802153/UKFoodWeb/Homepage_Misc/leaveIconNavy_ogmzvl.svg")}
-            onMouseLeave={() => setLeaveIcon("https://res.cloudinary.com/dbtu3hb0f/image/upload/v1615802154/UKFoodWeb/Homepage_Misc/leaveIconWhite_tnfagx.svg")}
-          >
-            <div id="wide-leave-content">
-              <img id="wide-sidebar-leave-icon" src={leaveIcon} alt="leave" />
-              <h3 id="wide-leave-text">Leave this app</h3>
-            </div>
-          </div>
-        </Link>
-
       </div>
     </>
   )
